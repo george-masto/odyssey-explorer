@@ -1,15 +1,18 @@
 <script lang="ts">
 	import { page } from '$app/state';
 	import { goto } from '$app/navigation';
-	import VoyageMap from '$lib/components/VoyageMap.svelte';
+	import DualMap from '$lib/components/DualMap.svelte';
 	import { stops, stopBySeq, type Stop } from '$lib/data/stops';
+	import { nowState } from '$lib/state/now.svelte';
 	import '../app.css';
 
 	let { children } = $props();
 
-	// The map lives in the layout so it survives stop-to-stop navigation;
+	// The maps live in the layout so they survive stop-to-stop navigation;
 	// pages only swap the story rail.
 	const current: Stop = $derived(page.data.stop ?? stops[0]);
+
+	let mobileMode = $state<'modern' | 'ancient'>('modern');
 
 	function sailTo(id: string) {
 		goto(`/stop/${id}`, { noScroll: true, keepFocus: true });
@@ -27,6 +30,8 @@
 		} else if (e.key === 'ArrowLeft') {
 			e.preventDefault();
 			sailBySeq(current.seq - 1);
+		} else if (e.key === 'n' || e.key === 'N') {
+			nowState.on = !nowState.on;
 		}
 	}
 </script>
@@ -49,12 +54,26 @@
 			{/each}
 			<span class="dots-count">{current.seq}/{stops.length}</span>
 		</nav>
-		<div class="now-slot" title="The NOW toggle arrives in M2">NOW ⇄ <small>M2</small></div>
+		<button
+			class="now-toggle"
+			class:on={nowState.on}
+			aria-pressed={nowState.on}
+			title="Reveal the modern world (N)"
+			onclick={() => (nowState.on = !nowState.on)}
+		>
+			NOW <span class="now-state">{nowState.on ? 'on' : 'off'}</span> ⇄
+		</button>
 	</header>
 
 	<div class="main">
 		<div class="map-wrap">
-			<VoyageMap {current} onselect={sailTo} />
+			<DualMap {current} onselect={sailTo} {mobileMode} />
+			<button
+				class="flip-chip"
+				onclick={() => (mobileMode = mobileMode === 'modern' ? 'ancient' : 'modern')}
+			>
+				{mobileMode === 'modern' ? 'MODERN' : 'ANCIENT'} ⇄
+			</button>
 		</div>
 		{@render children()}
 	</div>

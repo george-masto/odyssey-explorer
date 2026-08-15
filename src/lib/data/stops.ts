@@ -50,3 +50,20 @@ export const routeLine = {
 		coordinates: stops.map((s) => [s.coords.lng, s.coords.lat])
 	}
 };
+
+// One point per stop for map symbol/circle layers (ancient pane dots + Greek
+// labels; modern pane NOW-gated modern names).
+export const stopsGeoJSON = {
+	type: 'FeatureCollection' as const,
+	features: stops.map((s) => ({
+		type: 'Feature' as const,
+		properties: {
+			id: s.id,
+			seq: s.seq,
+			grc: s.ancient.grc,
+			modern: s.modern.primary.name,
+			certainty: s.certainty
+		},
+		geometry: { type: 'Point' as const, coordinates: [s.coords.lng, s.coords.lat] }
+	}))
+};

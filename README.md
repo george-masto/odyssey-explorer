@@ -40,7 +40,10 @@ dep optimizer 404s its web worker in dev.
 
 - [x] **M1 — Spine**: 17 thin stops, route line, ship + arrow/click/marker sailing,
       per-stop prerendered URLs, mobile stack.
-- [ ] **M2 — Signature**: parchment pane + camera sync, polytonic glyphs, NOW toggle v1.
+- [x] **M2 — Signature**: dual synced panes (dark-nautical + parchment with polytonic
+      toponyms via OpenFreeMap's Noto glyphs), NOW toggle (N key) with modern-label
+      bloom + self-hosted Sentinel-2 stop patches (`scripts/fetch-now-patches.mjs`,
+      3.3 MB for 15 stops), mobile pane-flip + collapsible bottom sheet.
 - [ ] **M3 — Ceiling**: one fully deep stop (Scylla) locks the content schema.
 - [ ] **M4 — The Lake**: all 17 stops fully authored (Greek, translation, tidbits, art).
 - [ ] **M5 — Polish & launch**: OG cards, a11y ≥ 95, citation checker, colophon, launch.

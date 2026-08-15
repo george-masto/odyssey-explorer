@@ -96,14 +96,48 @@ body {
 	font-variant-numeric: tabular-nums;
 }
 
-.now-slot {
+.now-toggle {
 	font-size: 12px;
 	font-weight: 700;
 	border: 1px solid var(--line);
 	border-radius: 14px;
-	padding: 4px 10px;
+	padding: 4px 12px;
 	color: var(--ink-dim);
+	background: transparent;
+	cursor: pointer;
 	white-space: nowrap;
+	transition:
+		color 0.25s,
+		border-color 0.25s,
+		box-shadow 0.25s;
+}
+
+.now-toggle .now-state {
+	font-weight: 400;
+	opacity: 0.7;
+}
+
+.now-toggle.on {
+	color: var(--gold);
+	border-color: var(--gold);
+	box-shadow: 0 0 10px rgba(201, 162, 39, 0.35);
+}
+
+.flip-chip {
+	display: none;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	z-index: 6;
+	font-size: 11px;
+	font-weight: 700;
+	letter-spacing: 0.5px;
+	border: 1px solid var(--line);
+	border-radius: 14px;
+	background: rgba(10, 22, 38, 0.85);
+	color: var(--ink);
+	padding: 5px 10px;
+	cursor: pointer;
 }
 
 /* ---- main split ---- */
@@ -193,6 +227,37 @@ body {
 	border-radius: 6px;
 	padding: 8px 10px;
 	background: rgba(201, 162, 39, 0.06);
+	transition: border-color 0.25s, box-shadow 0.25s;
+}
+
+.modern.now-lit {
+	border-color: var(--gold);
+	box-shadow: 0 0 8px rgba(201, 162, 39, 0.25);
+}
+
+.now-note {
+	margin-top: 6px;
+	font-size: 11.5px;
+	color: var(--ink-dim);
+	line-height: 1.4;
+}
+
+.grab {
+	display: none;
+	background: transparent;
+	border: 0;
+	padding: 4px 0 8px;
+	cursor: pointer;
+	width: 100%;
+}
+
+.grab-bar {
+	display: block;
+	width: 38px;
+	height: 4px;
+	border-radius: 2px;
+	background: var(--ink-dim);
+	margin: 0 auto;
 }
 
 .modern-label {
@@ -292,17 +357,32 @@ body {
 	pointer-events: none;
 }
 
-/* ---- mobile: rail becomes a bottom sheet-ish panel (true sheet in M2) ---- */
+/* ---- mobile: single flipped pane + collapsible bottom sheet ---- */
 @media (max-width: 760px) {
 	.main {
 		flex-direction: column;
 	}
 
+	.flip-chip {
+		display: block;
+	}
+
+	.grab {
+		display: block;
+	}
+
 	.rail {
 		width: 100%;
-		max-height: 42dvh;
+		max-height: 44dvh;
 		border-left: none;
 		border-top: 1px solid var(--line);
+		transition: max-height 0.3s ease;
+		padding-top: 4px;
+	}
+
+	.rail.collapsed {
+		max-height: 92px;
+		overflow: hidden;
 	}
 
 	.topbar {
