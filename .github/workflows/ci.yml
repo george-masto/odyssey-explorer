@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run check
+      - run: npm run build
+      - uses: actions/upload-artifact@v4
+        with:
+          name: site
+          path: build/
+
+  # Deploy (M1: intentionally disabled — design premise 7 is complete-then-launch).
+  # When ready for the private preview:
+  #   Cloudflare Pages: create a project, add CLOUDFLARE_API_TOKEN + CLOUDFLARE_ACCOUNT_ID
+  #   secrets, then add a job using cloudflare/wrangler-action with
+  #   `pages deploy build --project-name=odyssey-explorer`, protected by Cloudflare Access.
+  # M5 adds: Playwright smoke, Lighthouse (perf + a11y >= 95), citation checker.
