@@ -17,12 +17,18 @@ The five marquee interlinear passages are documented in
 
 - **SvelteKit + adapter-static** — every stop prerenders to a real URL
   (`/stop/scylla-charybdis`); no backend anywhere.
-- **MapLibre GL JS** — vector map with flyTo camera choreography.
-  M1 uses OpenFreeMap's hosted tiles (dev convenience); M2 swaps in the self-hosted
-  PMTiles Mediterranean extract + custom dark-nautical and parchment styles.
+- **MapLibre GL JS, one map, two worlds** — a single north-locked map whose NOW
+  toggle (N key) swaps whole layer groups: the ancient parchment world (polytonic
+  toponyms, ink route) ↔ the modern world (EOX Sentinel-2 cloudless satellite +
+  modern names + Google Maps links). Vector data via OpenFreeMap hosted tiles.
 - **Content as data** — one Markdown+frontmatter file per stop in
-  [content/stops/](content/stops/), parsed at build (`src/lib/data/stops.ts`).
-  Crew-ticker arithmetic convention is documented in the Scylla stop's frontmatter.
+  [content/stops/](content/stops/), parsed at build (`src/lib/data/stops.ts`):
+  CTS-verified Greek excerpts, Murray 1919 translation, tap-a-word interlinear on
+  the five marquee passages, etymology chains, sourced tidbits, PD/CC art with
+  attribution. Greek is extracted from the vendored Perseus TEI editions in
+  [sources/perseus/](sources/perseus/) via `node scripts/perseus.mjs` — never
+  typed from memory.
+- **Credits** — every licence and artwork attributed on [/about](src/routes/about/+page.svelte).
 
 ## Develop
 
@@ -40,13 +46,17 @@ dep optimizer 404s its web worker in dev.
 
 - [x] **M1 — Spine**: 17 thin stops, route line, ship + arrow/click/marker sailing,
       per-stop prerendered URLs, mobile stack.
-- [x] **M2 — Signature**: dual synced panes (dark-nautical + parchment with polytonic
-      toponyms via OpenFreeMap's Noto glyphs), NOW toggle (N key) with modern-label
-      bloom + self-hosted Sentinel-2 stop patches (`scripts/fetch-now-patches.mjs`,
-      3.3 MB for 15 stops), mobile pane-flip + collapsible bottom sheet.
-- [ ] **M3 — Ceiling**: one fully deep stop (Scylla) locks the content schema.
-- [ ] **M4 — The Lake**: all 17 stops fully authored (Greek, translation, tidbits, art).
-- [ ] **M5 — Polish & launch**: OG cards, a11y ≥ 95, citation checker, colophon, launch.
+- [x] **M2 — Signature**: parchment cartography with polytonic toponyms (OpenFreeMap
+      Noto glyphs), NOW toggle, mobile bottom sheet. (The M2 dual-pane layout and
+      per-stop satellite patches were replaced after user testing — see below.)
+- [x] **M2.5 — Restructure from testing feedback**: ONE north-locked map; NOW swaps
+      ancient ↔ modern worlds; full EOX Sentinel-2 cloudless basemap; Google Maps
+      link per stop.
+- [x] **M3 — Ceiling**: deep-content schema locked on Scylla (excerpt, interlinear,
+      etymology, tidbits, art).
+- [x] **M4 — The Lake**: all 17 stops fully authored (CTS-verified Greek, Murray,
+      tidbits with citations, etymology, PD/CC art).
+- [ ] **M5 — Polish & launch**: OG cards, a11y ≥ 95, citation checker in CI, launch posts.
 
 ## Rights
 

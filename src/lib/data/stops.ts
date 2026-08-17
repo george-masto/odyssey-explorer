@@ -2,6 +2,52 @@ import { parse } from 'yaml';
 
 export type Certainty = 'secure' | 'traditional' | 'disputed' | 'mythic';
 
+export interface GlossWord {
+	w: string;
+	lemma?: string;
+	gloss: string;
+}
+
+export interface InterlinearLine {
+	line: number;
+	words: GlossWord[];
+}
+
+export interface Excerpt {
+	lines: { n: number; grc: string }[];
+	en: string;
+	cite: string;
+}
+
+export interface EtymologyStage {
+	lang: string; // grc | la | it | el | en | …
+	form: string;
+	gloss?: string;
+	note?: string;
+}
+
+export interface Etymology {
+	lemma: string;
+	stages: EtymologyStage[];
+	note?: string;
+	sources?: string[];
+}
+
+export interface Tidbit {
+	text: string;
+	source: string;
+}
+
+export interface Artwork {
+	file: string;
+	title: string;
+	artist: string;
+	year: string | number;
+	collection?: string;
+	license: string;
+	source_url: string;
+}
+
 export interface Stop {
 	id: string;
 	seq: number;
@@ -9,7 +55,7 @@ export interface Stop {
 	title: string;
 	book_refs: string[];
 	coords: { lat: number; lng: number };
-	camera: { zoom: number; bearing: number; pitch: number };
+	camera: { zoom: number }; // north-up always — no bearing, no pitch (user decision, 2026-08-17)
 	certainty: Certainty;
 	ancient: { grc: string; translit: string };
 	modern: { primary: { name: string; country: string } };
@@ -17,6 +63,13 @@ export interface Stop {
 	crew_note?: string;
 	summary: string;
 	marquee_passage?: string;
+	// deep content (M3+)
+	excerpt?: Excerpt;
+	interlinear?: InterlinearLine[];
+	etymology?: Etymology[];
+	tidbits?: Tidbit[];
+	art?: Artwork[];
+	now_today?: string;
 }
 
 // Frontmatter-only at M1; markdown bodies become stop content in M3/M4.

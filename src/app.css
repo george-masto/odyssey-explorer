@@ -123,21 +123,17 @@ body {
 	box-shadow: 0 0 10px rgba(201, 162, 39, 0.35);
 }
 
-.flip-chip {
-	display: none;
-	position: absolute;
-	top: 10px;
-	right: 10px;
-	z-index: 6;
-	font-size: 11px;
-	font-weight: 700;
-	letter-spacing: 0.5px;
-	border: 1px solid var(--line);
-	border-radius: 14px;
-	background: rgba(10, 22, 38, 0.85);
-	color: var(--ink);
-	padding: 5px 10px;
-	cursor: pointer;
+.gmaps {
+	display: inline-block;
+	margin-left: 8px;
+	font-size: 12px;
+	color: var(--gold);
+	text-decoration: none;
+	border-bottom: 1px dotted var(--gold);
+}
+
+.gmaps:hover {
+	border-bottom-style: solid;
 }
 
 /* ---- main split ---- */
@@ -286,6 +282,222 @@ body {
 	color: #c96a74;
 }
 
+/* ---- excerpt: the Homeric text ---- */
+.excerpt {
+	border-top: 1px solid var(--line);
+	padding-top: 10px;
+}
+
+.grc-line {
+	display: flex;
+	gap: 8px;
+	align-items: baseline;
+	margin-bottom: 2px;
+}
+
+.lineno {
+	flex-shrink: 0;
+	width: 26px;
+	text-align: right;
+	font-size: 10px;
+	color: var(--ink-dim);
+	font-variant-numeric: tabular-nums;
+	user-select: none;
+}
+
+.grc-text,
+.words {
+	font-family: var(--serif);
+	font-size: 15.5px;
+	line-height: 1.65;
+	color: var(--ink);
+}
+
+.gr-word {
+	background: transparent;
+	border: 0;
+	border-bottom: 1px dashed rgba(201, 162, 39, 0.45);
+	padding: 0 1px;
+	margin-right: 3px;
+	font: inherit;
+	color: inherit;
+	cursor: pointer;
+}
+
+.gr-word:hover {
+	color: var(--gold);
+}
+
+.gr-word.sel {
+	color: var(--gold);
+	border-bottom-style: solid;
+	border-bottom-color: var(--gold);
+}
+
+.gloss {
+	margin: 8px 0 2px 34px;
+	font-size: 13px;
+	border-left: 2px solid var(--gold);
+	padding: 4px 10px;
+	background: rgba(201, 162, 39, 0.07);
+	min-height: 20px;
+}
+
+.gloss-w {
+	font-family: var(--serif);
+	font-weight: 700;
+	color: var(--gold);
+	margin-right: 6px;
+}
+
+.gloss-lemma {
+	color: var(--ink-dim);
+	margin-right: 6px;
+	font-family: var(--serif);
+}
+
+.hint-gloss {
+	color: var(--ink-dim);
+	font-size: 11.5px;
+	font-style: italic;
+	border-left-color: var(--line);
+	background: transparent;
+}
+
+.trans {
+	font-family: var(--serif);
+	font-size: 13.5px;
+	line-height: 1.55;
+	color: #cfc9bb;
+	margin-top: 10px;
+}
+
+.cite {
+	font-size: 10.5px;
+	color: var(--ink-dim);
+	margin-top: 3px;
+}
+
+/* ---- cards ---- */
+.card {
+	border: 1px solid var(--line);
+	border-radius: 6px;
+	padding: 9px 11px;
+	background: rgba(255, 255, 255, 0.02);
+}
+
+.card-t {
+	font-size: 10px;
+	text-transform: uppercase;
+	letter-spacing: 1.2px;
+	color: var(--gold);
+	margin-bottom: 6px;
+}
+
+.chain {
+	font-size: 13px;
+	line-height: 1.9;
+}
+
+.chain .arrow {
+	color: var(--gold);
+	margin: 0 7px;
+}
+
+.stage {
+	white-space: nowrap;
+}
+
+.stage-form {
+	font-family: var(--serif);
+	font-weight: 700;
+}
+
+.stage-gloss {
+	color: #cfc9bb;
+	margin-left: 4px;
+}
+
+.stage-lang {
+	display: block;
+	font-size: 9.5px;
+	text-transform: uppercase;
+	letter-spacing: 0.8px;
+	color: var(--ink-dim);
+	line-height: 1.1;
+	white-space: normal;
+}
+
+.etym-note {
+	font-size: 12.5px;
+	color: #cfc9bb;
+	margin-top: 7px;
+	line-height: 1.45;
+}
+
+.etym-sources {
+	font-size: 10.5px;
+	color: var(--ink-dim);
+	margin-top: 5px;
+}
+
+/* ---- tidbits ---- */
+.tidbits ul {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.tidbits li {
+	font-size: 13px;
+	line-height: 1.5;
+	padding-left: 14px;
+	position: relative;
+}
+
+.tidbits li::before {
+	content: '❧';
+	position: absolute;
+	left: 0;
+	color: var(--gold);
+	font-size: 11px;
+}
+
+.tidbit-src {
+	color: var(--ink-dim);
+	font-size: 10.5px;
+}
+
+/* ---- art ---- */
+.artstrip {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.artstrip img {
+	width: 100%;
+	height: auto;
+	border-radius: 4px;
+	display: block;
+	border: 1px solid var(--line);
+}
+
+.artstrip figcaption {
+	font-size: 10.5px;
+	color: var(--ink-dim);
+	margin-top: 4px;
+	line-height: 1.4;
+}
+
+.now-today {
+	margin-top: 6px;
+	font-size: 12.5px;
+	line-height: 1.5;
+	color: var(--ink);
+}
+
 .sailnav {
 	margin-top: auto;
 	display: flex;
@@ -322,6 +534,15 @@ body {
 	font-size: 11px;
 	color: var(--ink-dim);
 	text-align: center;
+}
+
+.about-link {
+	color: var(--ink-dim);
+	text-decoration: underline dotted;
+}
+
+.about-link:hover {
+	color: var(--gold);
 }
 
 /* ---- map markers (global: created imperatively) ---- */
