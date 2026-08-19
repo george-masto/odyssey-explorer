@@ -4,8 +4,9 @@ An interactive atlas of Odysseus's voyage home: a cinematic map you sail stop-by
 from Troy to Ithaca, with the ancient Greek text, public-domain translations,
 etymology, sourced tidbits, and 2,500 years of art at every landfall.
 
-**Status: M1 (the spine) — private preview. Complete-then-launch: no public URL until
-all 17 wanderings stops are fully authored.**
+**Live at [georgemasto.com/odyssey](https://georgemasto.com/odyssey)** (proxied from the
+personal-site Vercel project; standalone at
+[odyssey-explorer.vercel.app/odyssey](https://odyssey-explorer.vercel.app/odyssey)).
 
 The full approved design lives at
 `~/.gstack/projects/odyssey_interactive/gmm-nobranch-design-20260814-164515.md`
@@ -56,7 +57,27 @@ dep optimizer 404s its web worker in dev.
       etymology, tidbits, art).
 - [x] **M4 — The Lake**: all 17 stops fully authored (CTS-verified Greek, Murray,
       tidbits with citations, etymology, PD/CC art).
-- [ ] **M5 — Polish & launch**: OG cards, a11y ≥ 95, citation checker in CI, launch posts.
+- [x] **M5 — Polish & deploy**: 18 generated OG cards (`scripts/generate-og.mjs`),
+      Lighthouse a11y 96/100 (stop pages / about; the one residual flag is the
+      inline Greek word buttons — WCAG 2.5.8 inline-target exemption), citation
+      checker in CI, deployed to Vercel behind `georgemasto.com/odyssey`.
+
+## Deploy
+
+The Vercel project is `odyssey-explorer` (static build nested under `/odyssey/`,
+see vercel.json). Deploy with:
+
+```bash
+npx vercel deploy --prod
+```
+
+georgemasto.com/odyssey is a rewrite in the personal-site repo's vercel.json
+proxying to `odyssey-explorer.vercel.app/odyssey/:path*`. To make pushes to
+`main` auto-deploy instead: grant the Vercel GitHub app access to this repo
+(github.com/apps/vercel → Configure), then run `npx vercel git connect`.
+
+Regenerate OG cards after content changes (`node scripts/generate-og.mjs`, commit
+the PNGs — they render with macOS system fonts and are not rebuilt in CI).
 
 ## Rights
 
