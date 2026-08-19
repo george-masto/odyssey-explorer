@@ -16,6 +16,8 @@
 	let ship: Marker | undefined;
 	let ready = $state(false);
 
+	const SAIL_MS = 4600;
+
 	const reducedMotion =
 		typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches;
 
@@ -30,13 +32,18 @@
 			pitch: 0,
 			dragRotate: false,
 			pitchWithRotate: false,
-			touchPitch: false
+			touchPitch: false,
+			// Collapsed ⓘ badge; credits expand on click (full list on /about).
+			attributionControl: { compact: true }
 		});
 		map.touchZoomRotate.disableRotation();
 		map.keyboard.disableRotation();
 
 		map.on('load', () => {
 			if (!map) return;
+			// Compact attribution starts expanded; collapse it to the ⓘ badge
+			// (it reopens on click; full credits live on /about).
+			container.querySelector('details.maplibregl-ctrl-attrib')?.removeAttribute('open');
 			for (const s of stops) {
 				const el = document.createElement('button');
 				el.className = 'stop-marker' + (s.certainty === 'mythic' ? ' mythic' : '');
@@ -72,8 +79,9 @@
 			ship?.setLngLat(target);
 			map.jumpTo(cam);
 		} else {
-			if (ship) cancelSail = sailMarker(ship, target, 2600);
-			map.flyTo({ ...cam, duration: 2600, curve: 1.3 });
+			// Unhurried passage (user feedback: fast transitions disorient).
+			if (ship) cancelSail = sailMarker(ship, target, SAIL_MS);
+			map.flyTo({ ...cam, duration: SAIL_MS, curve: 1.25 });
 		}
 	});
 

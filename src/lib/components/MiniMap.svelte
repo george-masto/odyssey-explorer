@@ -63,7 +63,7 @@
 		if (!ready || !dot) return;
 		cancelGlide?.();
 		if (reducedMotion) dot.setLngLat([s.coords.lng, s.coords.lat]);
-		else cancelGlide = sailMarker(dot, [s.coords.lng, s.coords.lat], 2600);
+		else cancelGlide = sailMarker(dot, [s.coords.lng, s.coords.lat], 4600);
 	});
 </script>
 

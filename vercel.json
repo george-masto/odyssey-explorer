@@ -4,7 +4,6 @@
 	"outputDirectory": ".vercel-out",
 	"framework": null,
 	"cleanUrls": true,
-	"trailingSlash": false,
 	"redirects": [{ "source": "/", "destination": "/odyssey/", "permanent": false }],
 	"headers": [
 		{

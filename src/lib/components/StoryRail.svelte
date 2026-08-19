@@ -49,15 +49,21 @@
 	<p class="summary">{stop.summary}</p>
 
 	{#if stop.excerpt}
-		<Excerpt excerpt={stop.excerpt} interlinear={stop.interlinear} />
+		<div class="section">
+			<Excerpt excerpt={stop.excerpt} interlinear={stop.interlinear} />
+		</div>
 	{/if}
 
-	{#each stop.etymology ?? [] as etym (etym.lemma)}
-		<EtymologyCard {etym} />
-	{/each}
+	{#if stop.etymology?.length}
+		<div class="section etyms">
+			{#each stop.etymology as etym (etym.lemma)}
+				<EtymologyCard {etym} />
+			{/each}
+		</div>
+	{/if}
 
 	{#if stop.tidbits?.length}
-		<section class="tidbits" aria-label="Worth knowing">
+		<section class="tidbits section" aria-label="Worth knowing">
 			<div class="card-t">Worth knowing</div>
 			<ul>
 				{#each stop.tidbits as tidbit, i (i)}
@@ -68,7 +74,7 @@
 	{/if}
 
 	{#if stop.art?.length}
-		<section class="artstrip" aria-label="Art">
+		<section class="artstrip section" aria-label="Art">
 			{#each stop.art as piece (piece.file)}
 				<figure>
 					<a href={piece.source_url} target="_blank" rel="noopener noreferrer">
@@ -84,7 +90,7 @@
 		</section>
 	{/if}
 
-	<div class="modern" class:now-lit={nowState.on}>
+	<div class="modern section" class:now-lit={nowState.on}>
 		<span class="modern-label">Today</span>
 		{stop.modern.primary.name}{stop.modern.primary.country !== '—'
 			? ` · ${stop.modern.primary.country}`
@@ -109,7 +115,7 @@
 		{/if}
 	</div>
 
-	<div class="crew" title={stop.crew_note}>
+	<div class="crew section" title={stop.crew_note}>
 		⚓ companions remaining: <b>{stop.crew.remaining}</b>
 		{#if stop.crew.lost_here > 0}
 			<span class="lost">lost here: {stop.crew.lost_here}</span>
@@ -125,7 +131,7 @@
 		</button>
 	</nav>
 	<p class="hint">
-		arrow keys sail · N toggles now · click any numbered stop · <a
+		arrow keys sail · N switches map era · click any numbered stop · <a
 			class="about-link"
 			href="{base}/about">about & credits</a
 		>

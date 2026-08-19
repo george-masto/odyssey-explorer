@@ -71,10 +71,13 @@
 				class="now-toggle"
 				class:on={nowState.on}
 				aria-pressed={nowState.on}
-				title="Reveal the modern world (N)"
+				title="Switch map era (N)"
 				onclick={() => (nowState.on = !nowState.on)}
 			>
-				NOW <span class="now-state">{nowState.on ? 'on' : 'off'}</span> ⇄
+				<span class="era-label">Map era</span>
+				<span class="era-value">{nowState.on ? 'Today' : 'Ancient'}</span>
+				<span aria-hidden="true">⇄</span>
+				<kbd class="era-key">N</kbd>
 			</button>
 			<button
 				class="help-btn"
