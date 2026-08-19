@@ -1,4 +1,5 @@
 <script lang="ts">
+	import '$lib/map/worker';
 	import { Map as MaplibreMap, Marker } from 'maplibre-gl';
 	import 'maplibre-gl/dist/maplibre-gl.css';
 	import { onMount } from 'svelte';
