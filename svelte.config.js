@@ -11,7 +11,10 @@ const config = {
 
 		// Served at georgemasto.com/odyssey (proxied from the personal-site
 		// project); every internal link/asset goes through `base`.
-		paths: { base: '/odyssey' }
+		// relative:false — absolute /odyssey/... URLs. The default relative
+		// links break on the slashless /odyssey URL (./_app resolves to the
+		// domain root -> 404 -> blank page).
+		paths: { base: '/odyssey', relative: false }
 	}
 };
 
