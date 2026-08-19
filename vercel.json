@@ -1,0 +1,15 @@
+{
+	"$schema": "https://openapi.vercel.sh/vercel.json",
+	"buildCommand": "npm run build && rm -rf .vercel-out && mkdir -p .vercel-out/odyssey && cp -r build/. .vercel-out/odyssey/",
+	"outputDirectory": ".vercel-out",
+	"framework": null,
+	"cleanUrls": true,
+	"trailingSlash": false,
+	"redirects": [{ "source": "/", "destination": "/odyssey/", "permanent": false }],
+	"headers": [
+		{
+			"source": "/odyssey/(art|og)/(.*)",
+			"headers": [{ "key": "Cache-Control", "value": "public, max-age=604800, immutable" }]
+		}
+	]
+}
