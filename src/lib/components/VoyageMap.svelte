@@ -5,6 +5,7 @@
 	import { stops, type Stop } from '$lib/data/stops';
 	import { explorerStyle } from '$lib/map/styles';
 	import { nowState } from '$lib/state/now.svelte';
+	import trireme from '$lib/map/trireme.svg?raw';
 
 	let { current, onselect }: { current: Stop; onselect: (id: string) => void } = $props();
 
@@ -45,7 +46,7 @@
 			}
 			const shipEl = document.createElement('div');
 			shipEl.className = 'ship-marker';
-			shipEl.textContent = '⛵';
+			shipEl.innerHTML = trireme;
 			shipEl.setAttribute('aria-hidden', 'true');
 			ship = new Marker({ element: shipEl })
 				.setLngLat([current.coords.lng, current.coords.lat])

@@ -1,0 +1,40 @@
+<svg viewBox="0 0 64 42" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+	<!-- A black-figure trireme: ram at the bow, apotropaic eye, square sail, oar bank. -->
+	<g stroke-linecap="round" stroke-linejoin="round">
+		<!-- oars -->
+		<g stroke="#3a2a16" stroke-width="1.1" opacity="0.9">
+			<line x1="19" y1="24" x2="15.5" y2="33" />
+			<line x1="24" y1="24" x2="20.5" y2="33.5" />
+			<line x1="29" y1="24" x2="25.5" y2="34" />
+			<line x1="34" y1="24" x2="30.5" y2="34" />
+			<line x1="39" y1="24" x2="35.5" y2="33.5" />
+			<line x1="44" y1="24" x2="40.5" y2="33" />
+		</g>
+		<!-- mast + yard -->
+		<rect x="30.8" y="3" width="1.8" height="19" fill="#3a2a16" />
+		<line x1="19" y1="6.5" x2="44.5" y2="6.5" stroke="#3a2a16" stroke-width="1.6" />
+		<!-- billowed square sail -->
+		<path
+			d="M20 7.5 C23.5 16.5 40 16.5 43.5 7.5 L43.5 7 L20 7 Z"
+			fill="#b0402c"
+			stroke="#e8c96a"
+			stroke-width="0.9"
+		/>
+		<path d="M27.5 7.3 C28.6 12.6 29.6 12.9 30 13.9" stroke="#8c2f20" stroke-width="0.9" fill="none" />
+		<path d="M36 7.3 C35.2 12.6 34.3 12.9 33.9 13.9" stroke="#8c2f20" stroke-width="0.9" fill="none" />
+		<!-- hull with upswept stern and bronze ram -->
+		<path
+			d="M3 25.5 L12.5 23.4 L15 21.2 L47 21.2 C52.5 21 55.5 18.4 56.6 12.2 L59.6 13.2 C59.2 20.4 56 25 49.8 26.9 L15 27.2 Z"
+			fill="#26190e"
+			stroke="#e8c96a"
+			stroke-width="1"
+		/>
+		<!-- stern curl (aphlaston) -->
+		<path d="M56.6 12.2 C57.6 9.4 60.4 8.6 61.6 10.4" fill="none" stroke="#e8c96a" stroke-width="1.2" />
+		<!-- bronze ram sheath -->
+		<path d="M3 25.5 L9.5 24.1 L9.9 26.6 Z" fill="#c9a227" stroke="#8a6d1d" stroke-width="0.5" />
+		<!-- the painted eye -->
+		<circle cx="17.6" cy="24.1" r="1.7" fill="#efe6cc" />
+		<circle cx="17.9" cy="24.1" r="0.8" fill="#1a1208" />
+	</g>
+</svg>

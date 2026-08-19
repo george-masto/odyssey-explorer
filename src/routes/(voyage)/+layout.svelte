@@ -2,6 +2,7 @@
 	import { page } from '$app/state';
 	import { goto } from '$app/navigation';
 	import VoyageMap from '$lib/components/VoyageMap.svelte';
+	import MiniMap from '$lib/components/MiniMap.svelte';
 	import { stops, stopBySeq, type Stop } from '$lib/data/stops';
 	import { nowState } from '$lib/state/now.svelte';
 
@@ -65,6 +66,7 @@
 	<div class="main">
 		<div class="map-wrap">
 			<VoyageMap {current} onselect={sailTo} />
+			<MiniMap {current} />
 		</div>
 		{@render children()}
 	</div>
