@@ -133,7 +133,9 @@
 				{#if index < slides.length - 1}
 					<button class="primary" onclick={() => index++}>Next →</button>
 				{:else}
-					<button class="primary" onclick={close}>Set sail ⛵</button>
+					<button class="primary" onclick={close}
+						>Set sail <span class="btn-ship" aria-hidden="true">{@html trireme}</span></button
+					>
 				{/if}
 			</div>
 		</div>
@@ -241,5 +243,16 @@
 
 	.primary:hover {
 		background: #3a2a16;
+	}
+
+	.btn-ship {
+		display: inline-block;
+		vertical-align: -4px;
+		margin-left: 6px;
+	}
+
+	.btn-ship :global(svg) {
+		height: 18px;
+		width: auto;
 	}
 </style>

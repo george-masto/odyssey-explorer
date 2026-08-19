@@ -153,20 +153,18 @@ export function explorerStyle(): StyleSpecification {
 				source: 'stops',
 				minzoom: 5,
 				layout: {
-					// Trilingual stack: Homeric Greek (bold ink) / modern Greek / English.
+					// Homeric Greek (bold ink) over English. (Modern Greek was nearly
+					// identical to the ancient on most stops — dropped from the map as
+					// repetitive; it lives on in the data for the rail and future use.)
 					'text-field': [
 						'format',
 						['get', 'grc'],
 						{ 'text-font': ['literal', ['Noto Sans Bold']] },
 						'\n',
 						{},
-						['get', 'el'],
-						{ 'font-scale': 0.82, 'text-color': '#4a3a1c' },
-						'\n',
-						{},
 						['get', 'en'],
 						{
-							'font-scale': 0.78,
+							'font-scale': 0.8,
 							'text-font': ['literal', ['Noto Sans Italic']],
 							'text-color': '#6b5327'
 						}

@@ -102,18 +102,36 @@ async function stopCard(stop) {
 }
 
 async function siteCard() {
-	const svg = Buffer.from(`<svg width="${W}" height="${H}" xmlns="http://www.w3.org/2000/svg">
-		<rect width="${W}" height="${H}" fill="#e6d7ae"/>
-		<rect width="${W}" height="${H}" fill="#efe6cc" opacity="0.5"/>
-		${frame('#8a6d1d')}
-		<path d="M 130 505 C 320 430 430 545 600 470 C 780 390 900 500 1070 430"
-			fill="none" stroke="#8a744a" stroke-width="3" stroke-dasharray="4 14" stroke-linecap="round"/>
-		<g transform="translate(388,118) scale(6.6)">${triremePaths}</g>
-		<text x="600" y="470" text-anchor="middle" font-family="Georgia, serif" font-size="74" font-weight="700" fill="#26190e">ODYSSEY EXPLORER</text>
-		<text x="600" y="530" text-anchor="middle" font-family="Georgia, serif" font-size="27" font-style="italic" fill="#6b5327">Sail the ten-year voyage home — the Greek, the real places, the art</text>
-		<text x="600" y="588" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-size="19" letter-spacing="2" fill="#8a6d1d">georgemasto.com/odyssey</text>
+	// Full-bleed Turner — the most epic Odyssey painting there is — with the
+	// title rising out of a dark gradient. Distinct from the stop cards.
+	const turner = stops.find((s) => s.id === 'cyclopes')?.art?.[0]?.file;
+	if (!turner) throw new Error('cyclopes art missing for the site card');
+	const artBuf = await sharp(`static${turner}`)
+		.resize(W, H, { fit: 'cover', position: 'attention' })
+		.toBuffer();
+	const overlay = Buffer.from(`<svg width="${W}" height="${H}" xmlns="http://www.w3.org/2000/svg">
+		<defs>
+			<linearGradient id="dusk" x1="0" y1="1" x2="0" y2="0">
+				<stop offset="0" stop-color="#060c16" stop-opacity="0.94"/>
+				<stop offset="0.42" stop-color="#060c16" stop-opacity="0.55"/>
+				<stop offset="0.75" stop-color="#060c16" stop-opacity="0"/>
+			</linearGradient>
+		</defs>
+		<rect width="${W}" height="${H}" fill="url(#dusk)"/>
+		${frame()}
+		<g transform="translate(1016,44) scale(2.3)">${triremePaths}</g>
+		<text x="56" y="490" font-family="Georgia, serif" font-size="84" font-weight="700" fill="#f3edde">ODYSSEY EXPLORER</text>
+		<text x="56" y="543" font-family="Georgia, serif" font-size="27" font-style="italic" fill="#e9c65a">Sail the ten-year voyage home — the Greek, the real places, the art</text>
+		<text x="56" y="590" font-family="Helvetica, Arial, sans-serif" font-size="19" letter-spacing="2" fill="#c9a227">georgemasto.com/odyssey</text>
+		<text x="1144" y="608" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#ffffff" fill-opacity="0.55">J.M.W. Turner, Ulysses Deriding Polyphemus, 1829</text>
 	</svg>`);
-	await sharp(svg).png().toFile(`${OUT}/site.png`);
+	await sharp({ create: { width: W, height: H, channels: 4, background: '#060c16' } })
+		.composite([
+			{ input: artBuf, left: 0, top: 0 },
+			{ input: overlay, left: 0, top: 0 }
+		])
+		.png({ quality: 90 })
+		.toFile(`${OUT}/site.png`);
 }
 
 mkdirSync(OUT, { recursive: true });
