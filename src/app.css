@@ -656,12 +656,12 @@ body {
 }
 
 .ship-marker {
-	width: 48px;
-	filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.55));
+	width: 58px;
+	filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
 	pointer-events: none;
 }
 
-.ship-marker svg {
+.ship-marker img {
 	display: block;
 	width: 100%;
 	height: auto;

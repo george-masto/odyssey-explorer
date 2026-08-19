@@ -46,7 +46,7 @@ function wrap(text, max, maxLines) {
 	return lines;
 }
 
-const triremePaths = /<g[\s\S]*<\/g>/.exec(readFileSync('src/lib/map/trireme.svg', 'utf8'))[0];
+const SHIP = 'src/lib/assets/ship.png'; // the painted trireme cutout
 
 function frame(stroke = '#c9a227') {
 	return `
@@ -119,16 +119,17 @@ async function siteCard() {
 		</defs>
 		<rect width="${W}" height="${H}" fill="url(#dusk)"/>
 		${frame()}
-		<g transform="translate(1016,44) scale(2.3)">${triremePaths}</g>
 		<text x="56" y="490" font-family="Georgia, serif" font-size="84" font-weight="700" fill="#f3edde">ODYSSEY EXPLORER</text>
 		<text x="56" y="543" font-family="Georgia, serif" font-size="27" font-style="italic" fill="#e9c65a">Sail the ten-year voyage home — the Greek, the real places, the art</text>
 		<text x="56" y="590" font-family="Helvetica, Arial, sans-serif" font-size="19" letter-spacing="2" fill="#c9a227">georgemasto.com/odyssey</text>
 		<text x="1144" y="608" text-anchor="end" font-family="Helvetica, Arial, sans-serif" font-size="13" fill="#ffffff" fill-opacity="0.55">J.M.W. Turner, Ulysses Deriding Polyphemus, 1829</text>
 	</svg>`);
+	const shipBuf = await sharp(SHIP).resize({ width: 190 }).toBuffer();
 	await sharp({ create: { width: W, height: H, channels: 4, background: '#060c16' } })
 		.composite([
 			{ input: artBuf, left: 0, top: 0 },
-			{ input: overlay, left: 0, top: 0 }
+			{ input: overlay, left: 0, top: 0 },
+			{ input: shipBuf, left: 966, top: 40 }
 		])
 		.png({ quality: 90 })
 		.toFile(`${OUT}/site.png`);

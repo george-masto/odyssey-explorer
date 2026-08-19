@@ -1,7 +1,9 @@
 <script lang="ts">
-	import trireme from '$lib/map/trireme.svg?raw';
+	import shipUrl from '$lib/assets/ship.png';
 
 	let { open = $bindable() }: { open: boolean } = $props();
+
+	const shipImg = `<img src="${shipUrl}" alt="" draggable="false" />`;
 
 	const windRose = `<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
 		<path d="M13 13 L29 27 L27 29 Z" fill="#8a744a"/><path d="M51 13 L35 27 L37 29 Z" fill="#8a744a"/>
@@ -36,7 +38,7 @@
 
 	const slides = [
 		{
-			icon: trireme,
+			icon: shipImg,
 			title: 'Sail the Odyssey',
 			body: "Seventeen landfalls from Troy to Ithaca — the world's greatest homecoming on an ancient chart. Every stop carries Homer's own Greek, the story, sourced lore, art, and what stands in that exact place today."
 		},
@@ -134,7 +136,7 @@
 					<button class="primary" onclick={() => index++}>Next →</button>
 				{:else}
 					<button class="primary" onclick={close}
-						>Set sail <span class="btn-ship" aria-hidden="true">{@html trireme}</span></button
+						>Set sail <span class="btn-ship" aria-hidden="true">{@html shipImg}</span></button
 					>
 				{/if}
 			</div>
@@ -174,10 +176,12 @@
 		margin-bottom: 12px;
 	}
 
-	.icon :global(svg) {
+	.icon :global(svg),
+	.icon :global(img) {
 		height: 100%;
 		width: auto;
-		max-width: 150px;
+		max-width: 170px;
+		object-fit: contain;
 	}
 
 	h2 {
@@ -251,8 +255,9 @@
 		margin-left: 6px;
 	}
 
-	.btn-ship :global(svg) {
-		height: 18px;
+	.btn-ship :global(svg),
+	.btn-ship :global(img) {
+		height: 17px;
 		width: auto;
 	}
 </style>

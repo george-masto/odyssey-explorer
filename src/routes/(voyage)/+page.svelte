@@ -17,13 +17,13 @@
 	<meta property="og:title" content={`${SITE_NAME} — the long way home`} />
 	<meta property="og:description" content={description} />
 	<meta property="og:url" content={`${SITE_URL}/`} />
-	<meta property="og:image" content={`${SITE_URL}/og/site.png?v=2`} />
+	<meta property="og:image" content={`${SITE_URL}/og/site.png?v=3`} />
 	<meta property="og:image:width" content="1200" />
 	<meta property="og:image:height" content="630" />
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta name="twitter:title" content={`${SITE_NAME} — the long way home`} />
 	<meta name="twitter:description" content={description} />
-	<meta name="twitter:image" content={`${SITE_URL}/og/site.png?v=2`} />
+	<meta name="twitter:image" content={`${SITE_URL}/og/site.png?v=3`} />
 </svelte:head>
 
 <StoryRail stop={data.stop} />

@@ -7,7 +7,7 @@
 	import { explorerStyle } from '$lib/map/styles';
 	import { sailMarker } from '$lib/map/animate';
 	import { nowState } from '$lib/state/now.svelte';
-	import trireme from '$lib/map/trireme.svg?raw';
+	import shipUrl from '$lib/assets/ship.png';
 
 	let { current, onselect }: { current: Stop; onselect: (id: string) => void } = $props();
 
@@ -55,7 +55,7 @@
 			}
 			const shipEl = document.createElement('div');
 			shipEl.className = 'ship-marker';
-			shipEl.innerHTML = trireme;
+			shipEl.innerHTML = `<img src="${shipUrl}" alt="" draggable="false" />`;
 			shipEl.setAttribute('aria-hidden', 'true');
 			ship = new Marker({ element: shipEl })
 				.setLngLat([current.coords.lng, current.coords.lat])
