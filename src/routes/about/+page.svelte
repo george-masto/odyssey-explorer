@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from '$app/paths';
 	import { stops } from '$lib/data/stops';
 
 	const artCredits = $derived(
@@ -15,7 +16,7 @@
 </svelte:head>
 
 <main class="about">
-	<a class="back" href="/">← back to the voyage</a>
+	<a class="back" href="{base}/">← back to the voyage</a>
 	<h1>About & Credits</h1>
 
 	<p>

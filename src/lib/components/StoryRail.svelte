@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 	import { stopBySeq, stops, type Stop } from '$lib/data/stops';
 	import { nowState } from '$lib/state/now.svelte';
 	import Excerpt from '$lib/components/Excerpt.svelte';
@@ -16,7 +17,7 @@
 	let railEl: HTMLElement | undefined;
 
 	function sail(target: Stop | undefined) {
-		if (target) goto(`/stop/${target.id}`, { noScroll: true, keepFocus: true });
+		if (target) goto(`${base}/stop/${target.id}`, { noScroll: true, keepFocus: true });
 	}
 
 	// New landfall: scroll the rail back to the top.
@@ -71,7 +72,7 @@
 			{#each stop.art as piece (piece.file)}
 				<figure>
 					<a href={piece.source_url} target="_blank" rel="noopener noreferrer">
-						<img src={piece.file} alt={`${piece.title} — ${piece.artist}`} loading="lazy" />
+						<img src={base + piece.file} alt={`${piece.title} — ${piece.artist}`} loading="lazy" />
 					</a>
 					<figcaption>
 						<i>{piece.title}</i> — {piece.artist}, {piece.year}{piece.collection
@@ -124,8 +125,9 @@
 		</button>
 	</nav>
 	<p class="hint">
-		arrow keys sail · N toggles now · click any numbered stop · <a class="about-link" href="/about"
-			>about & credits</a
+		arrow keys sail · N toggles now · click any numbered stop · <a
+			class="about-link"
+			href="{base}/about">about & credits</a
 		>
 	</p>
 </aside>

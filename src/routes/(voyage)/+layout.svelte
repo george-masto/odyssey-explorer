@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/state';
 	import { goto } from '$app/navigation';
+	import { base } from '$app/paths';
 	import VoyageMap from '$lib/components/VoyageMap.svelte';
 	import MiniMap from '$lib/components/MiniMap.svelte';
 	import { stops, stopBySeq, type Stop } from '$lib/data/stops';
@@ -13,7 +14,7 @@
 	const current: Stop = $derived(page.data.stop ?? stops[0]);
 
 	function sailTo(id: string) {
-		goto(`/stop/${id}`, { noScroll: true, keepFocus: true });
+		goto(`${base}/stop/${id}`, { noScroll: true, keepFocus: true });
 	}
 
 	function sailBySeq(seq: number) {
@@ -63,11 +64,11 @@
 		</button>
 	</header>
 
-	<div class="main">
+	<main class="main">
 		<div class="map-wrap">
 			<VoyageMap {current} onselect={sailTo} />
 			<MiniMap {current} />
 		</div>
 		{@render children()}
-	</div>
+	</main>
 </div>
