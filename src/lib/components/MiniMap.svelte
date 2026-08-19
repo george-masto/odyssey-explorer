@@ -3,6 +3,7 @@
 	import { Map as MaplibreMap, Marker } from 'maplibre-gl';
 	import { onMount } from 'svelte';
 	import { explorerStyle } from '$lib/map/styles';
+	import { sailMarker } from '$lib/map/animate';
 	import type { Stop } from '$lib/data/stops';
 
 	let { current }: { current: Stop } = $props();
@@ -30,6 +31,17 @@
 
 		map.on('load', () => {
 			if (!map) return;
+			// Inset-specific label treatment: tiny frame, so compact single-line
+			// Greek, slightly smaller, black and bold for legibility.
+			for (const layer of ['a-toponym-land', 'a-toponym-sea']) {
+				map.setLayoutProperty(layer, 'text-field', ['get', 'grc']);
+				map.setLayoutProperty(layer, 'text-size', 9.5);
+				map.setLayoutProperty(layer, 'text-font', ['Noto Sans Bold']);
+				map.setLayoutProperty(layer, 'text-letter-spacing', 0.05);
+				map.setPaintProperty(layer, 'text-color', '#1c1408');
+				map.setPaintProperty(layer, 'text-halo-color', '#efe6cc');
+				map.setPaintProperty(layer, 'text-halo-width', 1.4);
+			}
 			const el = document.createElement('div');
 			el.className = 'mini-dot';
 			el.setAttribute('aria-hidden', 'true');
@@ -42,10 +54,16 @@
 		return () => map?.remove();
 	});
 
+	let cancelGlide: (() => void) | undefined;
+	const reducedMotion =
+		typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches;
+
 	$effect(() => {
 		const s = current;
-		if (!ready) return;
-		dot?.setLngLat([s.coords.lng, s.coords.lat]);
+		if (!ready || !dot) return;
+		cancelGlide?.();
+		if (reducedMotion) dot.setLngLat([s.coords.lng, s.coords.lat]);
+		else cancelGlide = sailMarker(dot, [s.coords.lng, s.coords.lat], 2600);
 	});
 </script>
 

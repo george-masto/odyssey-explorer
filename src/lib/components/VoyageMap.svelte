@@ -5,6 +5,7 @@
 	import { onMount } from 'svelte';
 	import { stops, type Stop } from '$lib/data/stops';
 	import { explorerStyle } from '$lib/map/styles';
+	import { sailMarker } from '$lib/map/animate';
 	import { nowState } from '$lib/state/now.svelte';
 	import trireme from '$lib/map/trireme.svg?raw';
 
@@ -58,15 +59,20 @@
 		return () => map?.remove();
 	});
 
-	// Sail when the current stop changes (arrows, buttons, marker clicks, URL).
+	// Sail when the current stop changes (arrows, buttons, marker clicks, URL):
+	// the camera flies and the trireme glides along the route line in step.
+	let cancelSail: (() => void) | undefined;
 	$effect(() => {
 		const s = current;
 		if (!map || !ready) return;
-		ship?.setLngLat([s.coords.lng, s.coords.lat]);
-		const cam = { center: [s.coords.lng, s.coords.lat] as [number, number], zoom: s.camera.zoom };
+		const target: [number, number] = [s.coords.lng, s.coords.lat];
+		const cam = { center: target, zoom: s.camera.zoom };
+		cancelSail?.();
 		if (reducedMotion) {
+			ship?.setLngLat(target);
 			map.jumpTo(cam);
 		} else {
+			if (ship) cancelSail = sailMarker(ship, target, 2600);
 			map.flyTo({ ...cam, duration: 2600, curve: 1.3 });
 		}
 	});

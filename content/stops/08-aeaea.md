@@ -7,7 +7,7 @@ book_refs: ["Od. 10.133–574"]
 coords: { lat: 41.235, lng: 13.051 }
 camera: { zoom: 10 }
 certainty: traditional
-ancient: { grc: "Αἰαίη (Κίρκη)", translit: "Aiaíē (Kírkē)" }
+ancient: { grc: "Αἰαίη (Κίρκη)", translit: "Aiaíē (Kírkē)", el: "Αιαία (Κίρκη)" }
 modern:
   primary: { name: "Monte Circeo, Lazio", country: IT }
 crew: { remaining: 44, lost_here: 1 }

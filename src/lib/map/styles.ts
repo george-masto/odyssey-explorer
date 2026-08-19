@@ -101,13 +101,26 @@ export function explorerStyle(): StyleSpecification {
 				source: 'ancient-toponyms',
 				filter: ['==', ['get', 'kind'], 'sea'],
 				layout: {
-					'text-field': ['get', 'grc'],
+					// "Αἰγαῖον πέλαγος (Aegean Sea)" — English rides along, smaller.
+					'text-field': [
+						'format',
+						['get', 'grc'],
+						{},
+						'\n',
+						{},
+						['concat', '(', ['get', 'en'], ')'],
+						{ 'font-scale': 0.72 }
+					],
 					'text-font': ['Noto Sans Italic'],
 					'text-size': ['interpolate', ['linear'], ['zoom'], 4, 12, 8, 17],
-					'text-letter-spacing': 0.3,
+					'text-letter-spacing': 0.25,
 					'text-max-width': 20
 				},
-				paint: { 'text-color': '#8d7a4b', 'text-opacity': 0.85 }
+				paint: {
+					'text-color': '#4a3a1c',
+					'text-halo-color': '#f0e8d2',
+					'text-halo-width': 1.2
+				}
 			},
 			{
 				id: 'a-toponym-land',
@@ -115,12 +128,24 @@ export function explorerStyle(): StyleSpecification {
 				source: 'ancient-toponyms',
 				filter: ['==', ['get', 'kind'], 'land'],
 				layout: {
-					'text-field': ['get', 'grc'],
-					'text-font': ['Noto Sans Regular'],
+					'text-field': [
+						'format',
+						['get', 'grc'],
+						{ 'text-font': ['literal', ['Noto Sans Bold']] },
+						'\n',
+						{},
+						['concat', '(', ['get', 'en'], ')'],
+						{ 'font-scale': 0.72, 'text-font': ['literal', ['Noto Sans Italic']] }
+					],
+					'text-font': ['Noto Sans Bold'],
 					'text-size': ['interpolate', ['linear'], ['zoom'], 5, 11, 9, 15],
-					'text-letter-spacing': 0.25
+					'text-letter-spacing': 0.2
 				},
-				paint: { 'text-color': '#7d6a3e', 'text-opacity': 0.9 }
+				paint: {
+					'text-color': '#241a0c',
+					'text-halo-color': '#efe6cc',
+					'text-halo-width': 1.3
+				}
 			},
 			{
 				id: 'a-stop-grc',
@@ -128,14 +153,36 @@ export function explorerStyle(): StyleSpecification {
 				source: 'stops',
 				minzoom: 5,
 				layout: {
-					'text-field': ['get', 'grc'],
-					'text-font': ['Noto Sans Regular'],
-					'text-size': 12.5,
+					// Trilingual stack: Homeric Greek (bold ink) / modern Greek / English.
+					'text-field': [
+						'format',
+						['get', 'grc'],
+						{ 'text-font': ['literal', ['Noto Sans Bold']] },
+						'\n',
+						{},
+						['get', 'el'],
+						{ 'font-scale': 0.82, 'text-color': '#4a3a1c' },
+						'\n',
+						{},
+						['get', 'en'],
+						{
+							'font-scale': 0.78,
+							'text-font': ['literal', ['Noto Sans Italic']],
+							'text-color': '#6b5327'
+						}
+					],
+					'text-font': ['Noto Sans Bold'],
+					'text-size': 13,
 					'text-offset': [0, 0.9],
 					'text-anchor': 'top',
-					'text-max-width': 12
+					'text-max-width': 14,
+					'text-line-height': 1.25
 				},
-				paint: { 'text-color': '#6b5327', 'text-halo-color': '#efe6cc', 'text-halo-width': 1.2 }
+				paint: {
+					'text-color': '#241a0c',
+					'text-halo-color': '#efe6cc',
+					'text-halo-width': 1.4
+				}
 			},
 
 			// ===== modern world (revealed by NOW) =====

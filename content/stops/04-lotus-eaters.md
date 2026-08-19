@@ -7,7 +7,7 @@ book_refs: ["Od. 9.82–104"]
 coords: { lat: 33.808, lng: 10.845 }
 camera: { zoom: 9 }
 certainty: traditional
-ancient: { grc: "Λωτοφάγοι", translit: "Lōtophágoi" }
+ancient: { grc: "Λωτοφάγοι", translit: "Lōtophágoi", el: "Λωτοφάγοι" }
 modern:
   primary: { name: "Djerba", country: TN }
 crew: { remaining: 528, lost_here: 0 }

@@ -7,7 +7,7 @@ book_refs: ["Od. 13.187 ff.", "Od. 17–23 (endgame bridge)"]
 coords: { lat: 38.366, lng: 20.719 }
 camera: { zoom: 10.5 }
 certainty: traditional
-ancient: { grc: "Ἰθάκη", translit: "Ithákē" }
+ancient: { grc: "Ἰθάκη", translit: "Ithákē", el: "Ιθάκη" }
 modern:
   primary: { name: "Ithaki (Vathy)", country: GR }
 crew: { remaining: 0, lost_here: 0 }

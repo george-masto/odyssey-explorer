@@ -7,7 +7,7 @@ book_refs: ["Od. 10.1–79"]
 coords: { lat: 38.789, lng: 15.213 }
 camera: { zoom: 9.5 }
 certainty: traditional
-ancient: { grc: "Αἰολίη", translit: "Aiolíē" }
+ancient: { grc: "Αἰολίη", translit: "Aiolíē", el: "Αιολία" }
 modern:
   primary: { name: "Aeolian Islands (Stromboli)", country: IT }
 crew: { remaining: 522, lost_here: 0 }

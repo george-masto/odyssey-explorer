@@ -7,7 +7,7 @@ book_refs: ["Od. 6.1–8.586", "Od. 13.1–187"]
 coords: { lat: 39.674, lng: 19.710 }
 camera: { zoom: 10.5 }
 certainty: traditional
-ancient: { grc: "Σχερίη (Φαίηκες)", translit: "Scheríē (Phaíēkes)" }
+ancient: { grc: "Σχερίη (Φαίηκες)", translit: "Scheríē (Phaíēkes)", el: "Σχερία (Φαίακες)" }
 modern:
   primary: { name: "Corfu — Palaiokastritsa", country: GR }
 crew: { remaining: 0, lost_here: 0 }

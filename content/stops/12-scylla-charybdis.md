@@ -7,7 +7,7 @@ book_refs: ["Od. 12.73–126", "Od. 12.201–259"]
 coords: { lat: 38.253, lng: 15.638 }
 camera: { zoom: 10.5 }
 certainty: traditional
-ancient: { grc: "Σκύλλα καὶ Χάρυβδις", translit: "Skýlla kaì Chárybdis" }
+ancient: { grc: "Σκύλλα καὶ Χάρυβδις", translit: "Skýlla kaì Chárybdis", el: "Σκύλλα και Χάρυβδη" }
 modern:
   primary: { name: "Strait of Messina — Scilla, Calabria", country: IT }
 crew: { remaining: 38, lost_here: 6 }

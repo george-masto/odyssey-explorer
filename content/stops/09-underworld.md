@@ -7,7 +7,7 @@ book_refs: ["Od. 11"]
 coords: { lat: 39.236, lng: 20.480 }
 camera: { zoom: 8 }
 certainty: mythic
-ancient: { grc: "Νέκυια", translit: "Nékyia" }
+ancient: { grc: "Νέκυια", translit: "Nékyia", el: "Νέκυια" }
 modern:
   primary: { name: "River Acheron, Epirus (reception); Lake Avernus, Campania (rival)", country: GR }
 crew: { remaining: 44, lost_here: 0 }

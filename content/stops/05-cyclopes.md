@@ -7,7 +7,7 @@ book_refs: ["Od. 9.105–566"]
 coords: { lat: 37.561, lng: 15.161 }
 camera: { zoom: 10 }
 certainty: traditional
-ancient: { grc: "Κύκλωπες", translit: "Kýklōpes" }
+ancient: { grc: "Κύκλωπες", translit: "Kýklōpes", el: "Κύκλωπες" }
 modern:
   primary: { name: "Aci Trezza (Faraglioni dei Ciclopi), Sicily", country: IT }
 crew: { remaining: 522, lost_here: 6 }

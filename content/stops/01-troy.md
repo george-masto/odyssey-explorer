@@ -7,7 +7,7 @@ book_refs: ["Od. 9.37–40", "Od. 1.1–10"]
 coords: { lat: 39.957, lng: 26.239 }
 camera: { zoom: 9 }
 certainty: secure
-ancient: { grc: "Τροίη", translit: "Troíē" }
+ancient: { grc: "Τροίη", translit: "Troíē", el: "Τροία" }
 modern:
   primary: { name: "Hisarlik, Çanakkale", country: TR }
 crew: { remaining: 600, lost_here: 0 }

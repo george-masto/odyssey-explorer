@@ -7,7 +7,7 @@ book_refs: ["Od. 5.1–281", "Od. 12.447–453"]
 coords: { lat: 36.062, lng: 14.284 }
 camera: { zoom: 11 }
 certainty: disputed
-ancient: { grc: "Ὠγυγίη (Καλυψώ)", translit: "Ōgygíē (Kalypsṓ)" }
+ancient: { grc: "Ὠγυγίη (Καλυψώ)", translit: "Ōgygíē (Kalypsṓ)", el: "Ωγυγία (Καλυψώ)" }
 modern:
   primary: { name: "Gozo — Ramla Bay & Calypso's Cave", country: MT }
 crew: { remaining: 0, lost_here: 0 }

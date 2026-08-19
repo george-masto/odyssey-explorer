@@ -7,7 +7,7 @@ book_refs: ["Od. 10.80–132"]
 coords: { lat: 41.387, lng: 9.159 }
 camera: { zoom: 10.5 }
 certainty: disputed
-ancient: { grc: "Λαιστρυγόνες (Τηλέπυλος)", translit: "Laistrygónes (Tēlépylos)" }
+ancient: { grc: "Λαιστρυγόνες (Τηλέπυλος)", translit: "Laistrygónes (Tēlépylos)", el: "Λαιστρυγόνες" }
 modern:
   primary: { name: "Bonifacio, Corsica", country: FR }
 crew: { remaining: 45, lost_here: 477 }

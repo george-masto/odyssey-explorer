@@ -2,12 +2,24 @@
 	import { page } from '$app/state';
 	import { goto } from '$app/navigation';
 	import { base } from '$app/paths';
+	import { onMount } from 'svelte';
 	import VoyageMap from '$lib/components/VoyageMap.svelte';
 	import MiniMap from '$lib/components/MiniMap.svelte';
+	import Onboarding from '$lib/components/Onboarding.svelte';
 	import { stops, stopBySeq, type Stop } from '$lib/data/stops';
 	import { nowState } from '$lib/state/now.svelte';
 
 	let { children } = $props();
+
+	let helpOpen = $state(false);
+
+	onMount(() => {
+		try {
+			if (!localStorage.getItem('odyssey-onboarded-v1')) helpOpen = true;
+		} catch {
+			/* private mode */
+		}
+	});
 
 	// The map lives in the layout so it survives stop-to-stop navigation;
 	// pages only swap the story rail.
@@ -23,6 +35,7 @@
 	}
 
 	function onkeydown(e: KeyboardEvent) {
+		if (helpOpen) return; // the onboarding dialog owns the keyboard while open
 		if (e.key === 'ArrowRight') {
 			e.preventDefault();
 			sailBySeq(current.seq + 1);
@@ -53,16 +66,26 @@
 			{/each}
 			<span class="dots-count">{current.seq}/{stops.length}</span>
 		</nav>
-		<button
-			class="now-toggle"
-			class:on={nowState.on}
-			aria-pressed={nowState.on}
-			title="Reveal the modern world (N)"
-			onclick={() => (nowState.on = !nowState.on)}
-		>
-			NOW <span class="now-state">{nowState.on ? 'on' : 'off'}</span> ⇄
-		</button>
+		<div class="topbar-actions">
+			<button
+				class="now-toggle"
+				class:on={nowState.on}
+				aria-pressed={nowState.on}
+				title="Reveal the modern world (N)"
+				onclick={() => (nowState.on = !nowState.on)}
+			>
+				NOW <span class="now-state">{nowState.on ? 'on' : 'off'}</span> ⇄
+			</button>
+			<button
+				class="help-btn"
+				aria-label="How to use this — quick tour"
+				title="How to use this"
+				onclick={() => (helpOpen = true)}>?</button
+			>
+		</div>
 	</header>
+
+	<Onboarding bind:open={helpOpen} />
 
 	<main class="main">
 		<div class="map-wrap">

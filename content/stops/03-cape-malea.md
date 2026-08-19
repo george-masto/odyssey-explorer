@@ -7,7 +7,7 @@ book_refs: ["Od. 9.62–81"]
 coords: { lat: 36.434, lng: 23.196 }
 camera: { zoom: 8.5 }
 certainty: secure
-ancient: { grc: "Μάλεια καὶ Κύθηρα", translit: "Máleia kaì Kýthēra" }
+ancient: { grc: "Μάλεια καὶ Κύθηρα", translit: "Máleia kaì Kýthēra", el: "Μαλέας και Κύθηρα" }
 modern:
   primary: { name: "Cape Maleas & Kythira", country: GR }
 crew: { remaining: 528, lost_here: 0 }

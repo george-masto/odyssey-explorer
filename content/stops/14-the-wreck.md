@@ -7,7 +7,7 @@ book_refs: ["Od. 12.403–450"]
 coords: { lat: 36.9, lng: 16.5 }
 camera: { zoom: 7.5 }
 certainty: mythic
-ancient: { grc: "Ναυάγιον", translit: "Nauágion" }
+ancient: { grc: "Ναυάγιον", translit: "Nauágion", el: "Ναυάγιο" }
 modern:
   primary: { name: "Open Ionian Sea", country: "—" }
 crew: { remaining: 0, lost_here: 38 }

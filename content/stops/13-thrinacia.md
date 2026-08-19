@@ -7,7 +7,7 @@ book_refs: ["Od. 12.260–402"]
 coords: { lat: 37.853, lng: 15.287 }
 camera: { zoom: 9.5 }
 certainty: traditional
-ancient: { grc: "Θρινακίη", translit: "Thrinakíē" }
+ancient: { grc: "Θρινακίη", translit: "Thrinakíē", el: "Θρινακία" }
 modern:
   primary: { name: "Eastern Sicily (Taormina coast)", country: IT }
 crew: { remaining: 38, lost_here: 0 }

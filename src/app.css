@@ -147,6 +147,30 @@ body {
 	box-shadow: 0 0 10px rgba(201, 162, 39, 0.35);
 }
 
+.topbar-actions {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.help-btn {
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	border: 1px solid var(--line);
+	background: transparent;
+	color: var(--ink-dim);
+	font-size: 14px;
+	font-weight: 700;
+	cursor: pointer;
+	flex-shrink: 0;
+}
+
+.help-btn:hover {
+	color: var(--gold);
+	border-color: var(--gold);
+}
+
 .gmaps {
 	display: inline-block;
 	margin-left: 8px;
@@ -608,27 +632,27 @@ body {
 	height: auto;
 }
 
-/* minimap position dot */
+/* minimap position dot — blue so it stands out against the parchment */
 .mini-dot {
-	width: 11px;
-	height: 11px;
+	width: 12px;
+	height: 12px;
 	border-radius: 50%;
-	background: var(--gold);
-	border: 2px solid #26190e;
-	box-shadow: 0 0 0 0 rgba(201, 162, 39, 0.6);
+	background: #1e66d0;
+	border: 2px solid #ffffff;
+	box-shadow: 0 0 0 0 rgba(30, 102, 208, 0.6);
 	animation: mini-pulse 2.2s ease-out infinite;
 	pointer-events: none;
 }
 
 @keyframes mini-pulse {
 	0% {
-		box-shadow: 0 0 0 0 rgba(201, 162, 39, 0.55);
+		box-shadow: 0 0 0 0 rgba(30, 102, 208, 0.55);
 	}
 	70% {
-		box-shadow: 0 0 0 9px rgba(201, 162, 39, 0);
+		box-shadow: 0 0 0 9px rgba(30, 102, 208, 0);
 	}
 	100% {
-		box-shadow: 0 0 0 0 rgba(201, 162, 39, 0);
+		box-shadow: 0 0 0 0 rgba(30, 102, 208, 0);
 	}
 }
 

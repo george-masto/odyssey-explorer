@@ -1,21 +1,21 @@
 {
 	"type": "FeatureCollection",
 	"features": [
-		{ "type": "Feature", "properties": { "grc": "Αἰγαῖον πέλαγος", "kind": "sea", "minzoom": 4 }, "geometry": { "type": "Point", "coordinates": [25.0, 38.4] } },
-		{ "type": "Feature", "properties": { "grc": "Ἰόνιον πέλαγος", "kind": "sea", "minzoom": 4 }, "geometry": { "type": "Point", "coordinates": [18.6, 38.2] } },
-		{ "type": "Feature", "properties": { "grc": "Τυρσηνικὸν πέλαγος", "kind": "sea", "minzoom": 4 }, "geometry": { "type": "Point", "coordinates": [12.4, 39.9] } },
-		{ "type": "Feature", "properties": { "grc": "Λιβυκὸν πέλαγος", "kind": "sea", "minzoom": 4 }, "geometry": { "type": "Point", "coordinates": [22.8, 34.3] } },
-		{ "type": "Feature", "properties": { "grc": "Ἀδρίας", "kind": "sea", "minzoom": 5 }, "geometry": { "type": "Point", "coordinates": [16.2, 42.4] } },
-		{ "type": "Feature", "properties": { "grc": "Ἑλλήσποντος", "kind": "sea", "minzoom": 6 }, "geometry": { "type": "Point", "coordinates": [26.45, 40.25] } },
-		{ "type": "Feature", "properties": { "grc": "Ἑλλάς", "kind": "land", "minzoom": 5 }, "geometry": { "type": "Point", "coordinates": [22.0, 39.4] } },
-		{ "type": "Feature", "properties": { "grc": "Πελοπόννησος", "kind": "land", "minzoom": 6 }, "geometry": { "type": "Point", "coordinates": [22.2, 37.45] } },
-		{ "type": "Feature", "properties": { "grc": "Κρήτη", "kind": "land", "minzoom": 6 }, "geometry": { "type": "Point", "coordinates": [24.9, 35.2] } },
-		{ "type": "Feature", "properties": { "grc": "Ἰταλία", "kind": "land", "minzoom": 5 }, "geometry": { "type": "Point", "coordinates": [13.6, 42.6] } },
-		{ "type": "Feature", "properties": { "grc": "Σικελία", "kind": "land", "minzoom": 6 }, "geometry": { "type": "Point", "coordinates": [14.2, 37.55] } },
-		{ "type": "Feature", "properties": { "grc": "Λιβύη", "kind": "land", "minzoom": 5 }, "geometry": { "type": "Point", "coordinates": [15.5, 31.8] } },
-		{ "type": "Feature", "properties": { "grc": "Ἤπειρος", "kind": "land", "minzoom": 6 }, "geometry": { "type": "Point", "coordinates": [20.6, 39.8] } },
-		{ "type": "Feature", "properties": { "grc": "Θρῄκη", "kind": "land", "minzoom": 6 }, "geometry": { "type": "Point", "coordinates": [25.6, 41.4] } },
-		{ "type": "Feature", "properties": { "grc": "Τρῳάς", "kind": "land", "minzoom": 7 }, "geometry": { "type": "Point", "coordinates": [26.5, 39.75] } },
-		{ "type": "Feature", "properties": { "grc": "Κύθηρα", "kind": "land", "minzoom": 7 }, "geometry": { "type": "Point", "coordinates": [22.99, 36.26] } }
+		{ "type": "Feature", "properties": { "grc": "Αἰγαῖον πέλαγος", "en": "Aegean Sea", "kind": "sea", "minzoom": 4 }, "geometry": { "type": "Point", "coordinates": [25.0, 38.4] } },
+		{ "type": "Feature", "properties": { "grc": "Ἰόνιον πέλαγος", "en": "Ionian Sea", "kind": "sea", "minzoom": 4 }, "geometry": { "type": "Point", "coordinates": [18.6, 38.2] } },
+		{ "type": "Feature", "properties": { "grc": "Τυρσηνικὸν πέλαγος", "en": "Tyrrhenian Sea", "kind": "sea", "minzoom": 4 }, "geometry": { "type": "Point", "coordinates": [12.4, 39.9] } },
+		{ "type": "Feature", "properties": { "grc": "Λιβυκὸν πέλαγος", "en": "Libyan Sea", "kind": "sea", "minzoom": 4 }, "geometry": { "type": "Point", "coordinates": [22.8, 34.3] } },
+		{ "type": "Feature", "properties": { "grc": "Ἀδρίας", "en": "Adriatic", "kind": "sea", "minzoom": 5 }, "geometry": { "type": "Point", "coordinates": [16.2, 42.4] } },
+		{ "type": "Feature", "properties": { "grc": "Ἑλλήσποντος", "en": "Hellespont", "kind": "sea", "minzoom": 6 }, "geometry": { "type": "Point", "coordinates": [26.45, 40.25] } },
+		{ "type": "Feature", "properties": { "grc": "Ἑλλάς", "en": "Greece", "kind": "land", "minzoom": 5 }, "geometry": { "type": "Point", "coordinates": [22.0, 39.4] } },
+		{ "type": "Feature", "properties": { "grc": "Πελοπόννησος", "en": "Peloponnese", "kind": "land", "minzoom": 6 }, "geometry": { "type": "Point", "coordinates": [22.2, 37.45] } },
+		{ "type": "Feature", "properties": { "grc": "Κρήτη", "en": "Crete", "kind": "land", "minzoom": 6 }, "geometry": { "type": "Point", "coordinates": [24.9, 35.2] } },
+		{ "type": "Feature", "properties": { "grc": "Ἰταλία", "en": "Italy", "kind": "land", "minzoom": 5 }, "geometry": { "type": "Point", "coordinates": [13.6, 42.6] } },
+		{ "type": "Feature", "properties": { "grc": "Σικελία", "en": "Sicily", "kind": "land", "minzoom": 6 }, "geometry": { "type": "Point", "coordinates": [14.2, 37.55] } },
+		{ "type": "Feature", "properties": { "grc": "Λιβύη", "en": "Libya", "kind": "land", "minzoom": 5 }, "geometry": { "type": "Point", "coordinates": [15.5, 31.8] } },
+		{ "type": "Feature", "properties": { "grc": "Ἤπειρος", "en": "Epirus", "kind": "land", "minzoom": 6 }, "geometry": { "type": "Point", "coordinates": [20.6, 39.8] } },
+		{ "type": "Feature", "properties": { "grc": "Θρῄκη", "en": "Thrace", "kind": "land", "minzoom": 6 }, "geometry": { "type": "Point", "coordinates": [25.6, 41.4] } },
+		{ "type": "Feature", "properties": { "grc": "Τρῳάς", "en": "Troad", "kind": "land", "minzoom": 7 }, "geometry": { "type": "Point", "coordinates": [26.5, 39.75] } },
+		{ "type": "Feature", "properties": { "grc": "Κύθηρα", "en": "Cythera", "kind": "land", "minzoom": 7 }, "geometry": { "type": "Point", "coordinates": [22.99, 36.26] } }
 	]
 }

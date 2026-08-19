@@ -57,7 +57,7 @@ export interface Stop {
 	coords: { lat: number; lng: number };
 	camera: { zoom: number }; // north-up always — no bearing, no pitch (user decision, 2026-08-17)
 	certainty: Certainty;
-	ancient: { grc: string; translit: string };
+	ancient: { grc: string; translit: string; el: string };
 	modern: { primary: { name: string; country: string } };
 	crew: { remaining: number; lost_here: number };
 	crew_note?: string;
@@ -114,6 +114,8 @@ export const stopsGeoJSON = {
 			id: s.id,
 			seq: s.seq,
 			grc: s.ancient.grc,
+			el: s.ancient.el,
+			en: s.title,
 			modern: s.modern.primary.name,
 			certainty: s.certainty
 		},

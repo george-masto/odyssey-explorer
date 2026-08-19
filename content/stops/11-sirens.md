@@ -7,7 +7,7 @@ book_refs: ["Od. 12.151–200"]
 coords: { lat: 40.581, lng: 14.429 }
 camera: { zoom: 11 }
 certainty: traditional
-ancient: { grc: "Σειρῆνες", translit: "Seirênes" }
+ancient: { grc: "Σειρῆνες", translit: "Seirênes", el: "Σειρήνες" }
 modern:
   primary: { name: "Li Galli islets, Amalfi Coast", country: IT }
 crew: { remaining: 44, lost_here: 0 }

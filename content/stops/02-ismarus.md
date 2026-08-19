@@ -7,7 +7,7 @@ book_refs: ["Od. 9.39–61"]
 coords: { lat: 40.876, lng: 25.513 }
 camera: { zoom: 9 }
 certainty: traditional
-ancient: { grc: "Ἴσμαρος (Κίκονες)", translit: "Ísmaros (Kíkones)" }
+ancient: { grc: "Ἴσμαρος (Κίκονες)", translit: "Ísmaros (Kíkones)", el: "Ίσμαρος (Κίκονες)" }
 modern:
   primary: { name: "Maroneia, Thrace", country: GR }
 crew: { remaining: 528, lost_here: 72 }
