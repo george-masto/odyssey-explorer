@@ -23,6 +23,69 @@ excerpt:
     - { n: 124, grc: "ἰχθῦς δʼ ὣς πείροντες ἀτερπέα δαῖτα φέροντο." }
   en: "Then he raised a cry throughout the city, and as they heard it the mighty Laestrygonians came thronging from all sides, a host past counting, not like men but like the Giants. They hurled at us from the cliffs with rocks huge as a man could lift, and at once there rose throughout the ships a dreadful din, alike from men that were dying and from ships that were being crushed. And spearing them like fishes they bore them home, a loathly meal."
   cite: "Od. 10.118–124 · Greek: Perseus (ed. Murray 1919) · tr. A.T. Murray 1919"
+interlinear:
+  - line: 118
+    words:
+      - { w: "αὐτὰρ", lemma: "αὐτάρ", gloss: "but then" }
+      - { w: "ὁ", gloss: "he — Antiphates the king, one crewman already eaten" }
+      - { w: "τεῦχε", lemma: "τεύχω", gloss: "raised" }
+      - { w: "βοὴν", lemma: "βοή", gloss: "the alarm-cry" }
+      - { w: "διὰ", lemma: "διά", gloss: "through" }
+      - { w: "ἄστεος·", lemma: "ἄστυ", gloss: "the town" }
+      - { w: "οἱ", gloss: "they" }
+      - { w: "δʼ", lemma: "δέ", gloss: "and" }
+      - { w: "ἀίοντες", lemma: "ἀίω", gloss: "hearing it" }
+  - line: 119
+    words:
+      - { w: "φοίτων", lemma: "φοιτάω", gloss: "came swarming — imperfect tense: they kept coming" }
+      - { w: "ἴφθιμοι", lemma: "ἴφθιμος", gloss: "mighty, strapping" }
+      - { w: "Λαιστρυγόνες", lemma: "Λαιστρυγών", gloss: "the Laestrygonians" }
+      - { w: "ἄλλοθεν", gloss: "from all sides" }
+      - { w: "ἄλλος,", lemma: "ἄλλος", gloss: "man after man — ἄλλοθεν ἄλλος: one from here, another from there" }
+  - line: 120
+    words:
+      - { w: "μυρίοι,", lemma: "μυρίος", gloss: "thousands, past counting — the word behind 'myriad'" }
+      - { w: "οὐκ", lemma: "οὐ", gloss: "not" }
+      - { w: "ἄνδρεσσιν", lemma: "ἀνήρ", gloss: "men" }
+      - { w: "ἐοικότες,", lemma: "ἔοικα", gloss: "resembling" }
+      - { w: "ἀλλὰ", lemma: "ἀλλά", gloss: "but" }
+      - { w: "Γίγασιν.", lemma: "Γίγας", gloss: "the Giants — a race the gods themselves had to fight; the comparison reads them out of mankind" }
+  - line: 121
+    words:
+      - { w: "οἵ", gloss: "they" }
+      - { w: "ῥʼ", lemma: "ῥα", gloss: "(then — quick narrative particle)" }
+      - { w: "ἀπὸ", lemma: "ἀπό", gloss: "from" }
+      - { w: "πετράων", lemma: "πέτρα", gloss: "the cliffs" }
+      - { w: "ἀνδραχθέσι", lemma: "ἀνδραχθής", gloss: "man-burdening — ἀνήρ 'man' + ἄχθος 'load': each stone is one man's full carry" }
+      - { w: "χερμαδίοισιν", lemma: "χερμάδιον", gloss: "with boulders, hurling-stones" }
+  - line: 122
+    words:
+      - { w: "βάλλον·", lemma: "βάλλω", gloss: "kept pelting — not one volley but a rain" }
+      - { w: "ἄφαρ", gloss: "at once" }
+      - { w: "δὲ", lemma: "δέ", gloss: "and" }
+      - { w: "κακὸς", lemma: "κακός", gloss: "an evil" }
+      - { w: "κόναβος", gloss: "din, crash — an onomatopoeic word: the hulls are audible in it" }
+      - { w: "κατὰ", lemma: "κατά", gloss: "throughout" }
+      - { w: "νῆας", lemma: "ναῦς", gloss: "the ships" }
+      - { w: "ὀρώρει", lemma: "ὄρνυμι", gloss: "went up, had risen" }
+  - line: 123
+    words:
+      - { w: "ἀνδρῶν", lemma: "ἀνήρ", gloss: "of men" }
+      - { w: "τʼ", lemma: "τε", gloss: "both" }
+      - { w: "ὀλλυμένων", lemma: "ὄλλυμι", gloss: "being killed" }
+      - { w: "νηῶν", lemma: "ναῦς", gloss: "of ships" }
+      - { w: "θʼ", lemma: "τε", gloss: "and" }
+      - { w: "ἅμα", gloss: "at the same time" }
+      - { w: "ἀγνυμενάων·", lemma: "ἄγνυμι", gloss: "being smashed — the line is the din itself: dying men and breaking timber sounded together" }
+  - line: 124
+    words:
+      - { w: "ἰχθῦς", lemma: "ἰχθύς", gloss: "fish — ἰχθῦς δʼ ὣς, 'like fish': the massacre's most chilling simile — the men a speared catch, their killers fishermen at work" }
+      - { w: "δʼ", lemma: "δέ", gloss: "and" }
+      - { w: "ὣς", lemma: "ὥς", gloss: "like, as" }
+      - { w: "πείροντες", lemma: "πείρω", gloss: "spearing them through — the verb for skewering meat on spits" }
+      - { w: "ἀτερπέα", lemma: "ἀτερπής", gloss: "joyless" }
+      - { w: "δαῖτα", lemma: "δαίς", gloss: "meal — δαίς is the word for a proper shared feast; what is being served curdles it" }
+      - { w: "φέροντο.", lemma: "φέρω", gloss: "they carried off — middle voice: home, for themselves" }
 tidbits:
   - text: "Eleven of twelve ships are destroyed at their moorings with every man aboard: on this atlas's ledger, 477 of the 522 who left Troy die in this one harbor — against six taken by Scylla and six eaten in the Cyclops's cave. The poem's largest massacre takes barely fifteen lines, and not one of the dead is named."
     source: "Od. 10.118–132; twelve ships: Il. 2.637; a ship's company of ~46 implied at Od. 10.203–209"

@@ -25,6 +25,88 @@ excerpt:
     - { n: 531, grc: "ὣς Ὀδυσεὺς ἐλεεινὸν ὑπʼ ὀφρύσι δάκρυον εἶβεν." }
   en: "And as a woman wails and flings herself about her dear husband, who has fallen in front of his city and his people, seeking to ward off from his city and his children the pitiless day; and as she beholds him dying and gasping for breath, she clings to him and shrieks aloud, while the foe behind her smite her back and shoulders with their spears, and lead her away to captivity to bear toil and woe, while with most pitiful grief her cheeks are wasted: even so did Odysseus let fall pitiful tears from beneath his brows."
   cite: "Od. 8.523–531 · Greek: Perseus (ed. Murray 1919) · tr. A.T. Murray 1919"
+interlinear:
+  - line: 523
+    words:
+      - { w: "ὡς", gloss: "as" }
+      - { w: "δὲ", lemma: "δέ", gloss: "and" }
+      - { w: "γυνὴ", lemma: "γυνή", gloss: "a woman" }
+      - { w: "κλαίῃσι", lemma: "κλαίω", gloss: "wails — the simile turns him into his own victim: the sacker of Troy weeps like a woman of a sacked town" }
+      - { w: "φίλον", lemma: "φίλος", gloss: "her dear" }
+      - { w: "πόσιν", lemma: "πόσις", gloss: "husband" }
+      - { w: "ἀμφιπεσοῦσα,", lemma: "ἀμφιπίπτω", gloss: "flinging herself around him" }
+  - line: 524
+    words:
+      - { w: "ὅς", gloss: "who" }
+      - { w: "τε", gloss: "(generalizing particle)" }
+      - { w: "ἑῆς", lemma: "ἑός", gloss: "his own" }
+      - { w: "πρόσθεν", gloss: "in front of" }
+      - { w: "πόλιος", lemma: "πόλις", gloss: "city" }
+      - { w: "λαῶν", lemma: "λαός", gloss: "people" }
+      - { w: "τε", gloss: "and" }
+      - { w: "πέσῃσιν,", lemma: "πίπτω", gloss: "has fallen" }
+  - line: 525
+    words:
+      - { w: "ἄστεϊ", lemma: "ἄστυ", gloss: "from his town" }
+      - { w: "καὶ", lemma: "καί", gloss: "and" }
+      - { w: "τεκέεσσιν", lemma: "τέκος", gloss: "his children" }
+      - { w: "ἀμύνων", lemma: "ἀμύνω", gloss: "warding off" }
+      - { w: "νηλεὲς", lemma: "νηλεής", gloss: "the pitiless" }
+      - { w: "ἦμαρ·", lemma: "ἦμαρ", gloss: "day — the day a city falls; Homer's shorthand for what Odysseus himself did at Troy" }
+  - line: 526
+    words:
+      - { w: "ἡ", gloss: "she" }
+      - { w: "μὲν", lemma: "μέν", gloss: "for her part" }
+      - { w: "τὸν", gloss: "him" }
+      - { w: "θνήσκοντα", lemma: "θνῄσκω", gloss: "dying" }
+      - { w: "καὶ", lemma: "καί", gloss: "and" }
+      - { w: "ἀσπαίροντα", lemma: "ἀσπαίρω", gloss: "gasping" }
+      - { w: "ἰδοῦσα", lemma: "εἶδον", gloss: "seeing" }
+  - line: 527
+    words:
+      - { w: "ἀμφʼ", lemma: "ἀμφί", gloss: "over" }
+      - { w: "αὐτῷ", lemma: "αὐτός", gloss: "him" }
+      - { w: "χυμένη", lemma: "χέω", gloss: "poured — she collapses across the body like water" }
+      - { w: "λίγα", lemma: "λιγύς", gloss: "shrilly" }
+      - { w: "κωκύει·", lemma: "κωκύω", gloss: "she shrieks — a wail-word Homer gives only to women" }
+      - { w: "οἱ", gloss: "they" }
+      - { w: "δέ", gloss: "but" }
+      - { w: "τʼ", lemma: "τε", gloss: "(particle)" }
+      - { w: "ὄπισθε", gloss: "from behind" }
+  - line: 528
+    words:
+      - { w: "κόπτοντες", lemma: "κόπτω", gloss: "beating" }
+      - { w: "δούρεσσι", lemma: "δόρυ", gloss: "with their spears — butt-ends on a widow's back: conquest seen from underneath, by the loser" }
+      - { w: "μετάφρενον", gloss: "her back" }
+      - { w: "ἠδὲ", lemma: "ἠδέ", gloss: "and" }
+      - { w: "καὶ", lemma: "καί", gloss: "also" }
+      - { w: "ὤμους", lemma: "ὦμος", gloss: "shoulders" }
+  - line: 529
+    words:
+      - { w: "εἴρερον", lemma: "εἴρερος", gloss: "into slavery — a word found nowhere else in Homer" }
+      - { w: "εἰσανάγουσι,", lemma: "εἰσανάγω", gloss: "they lead her away" }
+      - { w: "πόνον", lemma: "πόνος", gloss: "toil" }
+      - { w: "τʼ", lemma: "τε", gloss: "and" }
+      - { w: "ἐχέμεν", lemma: "ἔχω", gloss: "to bear" }
+      - { w: "καὶ", lemma: "καί", gloss: "and" }
+      - { w: "ὀιζύν·", lemma: "ὀιζύς", gloss: "misery" }
+  - line: 530
+    words:
+      - { w: "τῆς", gloss: "her" }
+      - { w: "δʼ", lemma: "δέ", gloss: "and" }
+      - { w: "ἐλεεινοτάτῳ", lemma: "ἐλεεινός", gloss: "with the most pitiful" }
+      - { w: "ἄχεϊ", lemma: "ἄχος", gloss: "grief" }
+      - { w: "φθινύθουσι", lemma: "φθινύθω", gloss: "waste away" }
+      - { w: "παρειαί·", lemma: "παρειά", gloss: "her cheeks" }
+  - line: 531
+    words:
+      - { w: "ὣς", lemma: "ὥς", gloss: "so" }
+      - { w: "Ὀδυσεὺς", lemma: "Ὀδυσσεύς", gloss: "Odysseus" }
+      - { w: "ἐλεεινὸν", lemma: "ἐλεεινός", gloss: "a pitiful — her grief was 'most pitiful' one line above; the word crosses from her to him" }
+      - { w: "ὑπʼ", lemma: "ὑπό", gloss: "beneath" }
+      - { w: "ὀφρύσι", lemma: "ὀφρύς", gloss: "his brows" }
+      - { w: "δάκρυον", gloss: "a tear" }
+      - { w: "εἶβεν.", lemma: "εἴβω", gloss: "let fall" }
 etymology:
   - lemma: "Ναυσικάα"
     stages:

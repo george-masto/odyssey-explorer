@@ -25,6 +25,84 @@ excerpt:
     - { n: 102, grc: "μή πώς τις λωτοῖο φαγὼν νόστοιο λάθηται." }
   en: "And whosoever of them ate of the honey-sweet fruit of the lotus, had no longer any wish to bring back word or to return, but there they were fain to abide among the Lotus-eaters, feeding on the lotus, and forgetful of their homeward way. These men, therefore, I brought back perforce to the ships, weeping, and dragged them beneath the benches and bound them fast in the hollow ships; and I bade the rest of my trusty comrades to embark with speed on the swift ships, lest perchance anyone should eat of the lotus and forget his homeward way."
   cite: "Od. 9.94–102 · Greek: Perseus (ed. Murray 1919) · tr. A.T. Murray 1919"
+interlinear:
+  - line: 94
+    words:
+      - { w: "τῶν", gloss: "of our men" }
+      - { w: "δʼ", lemma: "δέ", gloss: "and" }
+      - { w: "ὅς", gloss: "whoever" }
+      - { w: "τις", gloss: "any one" }
+      - { w: "λωτοῖο", lemma: "λωτός", gloss: "of the lotus" }
+      - { w: "φάγοι", lemma: "ἐσθίω", gloss: "ate — optative: whoever ever so much as tasted" }
+      - { w: "μελιηδέα", lemma: "μελιηδής", gloss: "honey-sweet — the epithet Homer gives to wine, and once to homecoming itself (11.100): the lotus counterfeits νόστος" }
+      - { w: "καρπόν,", lemma: "καρπός", gloss: "fruit" }
+  - line: 95
+    words:
+      - { w: "οὐκέτʼ", lemma: "οὐκέτι", gloss: "no longer" }
+      - { w: "ἀπαγγεῖλαι", lemma: "ἀπαγγέλλω", gloss: "to bring back word" }
+      - { w: "πάλιν", gloss: "back" }
+      - { w: "ἤθελεν", lemma: "ἐθέλω", gloss: "had the will" }
+      - { w: "οὐδὲ", lemma: "οὐδέ", gloss: "nor" }
+      - { w: "νέεσθαι,", lemma: "νέομαι", gloss: "to journey home — the verb inside νόστος" }
+  - line: 96
+    words:
+      - { w: "ἀλλʼ", lemma: "ἀλλά", gloss: "but" }
+      - { w: "αὐτοῦ", gloss: "right there, on the spot" }
+      - { w: "βούλοντο", lemma: "βούλομαι", gloss: "they chose, preferred" }
+      - { w: "μετʼ", lemma: "μετά", gloss: "among" }
+      - { w: "ἀνδράσι", lemma: "ἀνήρ", gloss: "the men" }
+      - { w: "Λωτοφάγοισι", lemma: "Λωτοφάγοι", gloss: "the Lotus-eaters" }
+  - line: 97
+    words:
+      - { w: "λωτὸν", lemma: "λωτός", gloss: "lotus" }
+      - { w: "ἐρεπτόμενοι", lemma: "ἐρέπτομαι", gloss: "grazing on — in the Iliad the identical phrase describes idle horses at their fodder (2.776): the men are joining the livestock" }
+      - { w: "μενέμεν", lemma: "μένω", gloss: "to stay (epic infinitive)" }
+      - { w: "νόστου", lemma: "νόστος", gloss: "of homecoming" }
+      - { w: "τε", gloss: "and" }
+      - { w: "λαθέσθαι.", lemma: "λανθάνομαι", gloss: "to forget — the root of Lethe, oblivion's river; forgetting νόστος is this poem's true death" }
+  - line: 98
+    words:
+      - { w: "τοὺς", gloss: "these men" }
+      - { w: "μὲν", lemma: "μέν", gloss: "for their part" }
+      - { w: "ἐγὼν", lemma: "ἐγώ", gloss: "I" }
+      - { w: "ἐπὶ", lemma: "ἐπί", gloss: "to" }
+      - { w: "νῆας", lemma: "ναῦς", gloss: "the ships" }
+      - { w: "ἄγον", lemma: "ἄγω", gloss: "I hauled" }
+      - { w: "κλαίοντας", lemma: "κλαίω", gloss: "weeping — grief aimed at the rescue, not the loss" }
+      - { w: "ἀνάγκῃ,", lemma: "ἀνάγκη", gloss: "by force" }
+  - line: 99
+    words:
+      - { w: "νηυσὶ", lemma: "ναῦς", gloss: "in the ships" }
+      - { w: "δʼ", lemma: "δέ", gloss: "and" }
+      - { w: "ἐνὶ", lemma: "ἐν", gloss: "inside" }
+      - { w: "γλαφυρῇσιν", lemma: "γλαφυρός", gloss: "hollow — the ships' stock epithet" }
+      - { w: "ὑπὸ", lemma: "ὑπό", gloss: "beneath" }
+      - { w: "ζυγὰ", lemma: "ζυγόν", gloss: "the rowing-benches (literally 'yokes')" }
+      - { w: "δῆσα", lemma: "δέω", gloss: "I bound (them)" }
+      - { w: "ἐρύσσας.", lemma: "ἐρύω", gloss: "having dragged (them aboard)" }
+  - line: 100
+    words:
+      - { w: "αὐτὰρ", lemma: "αὐτάρ", gloss: "then" }
+      - { w: "τοὺς", gloss: "the" }
+      - { w: "ἄλλους", lemma: "ἄλλος", gloss: "rest" }
+      - { w: "κελόμην", lemma: "κέλομαι", gloss: "I ordered" }
+      - { w: "ἐρίηρας", lemma: "ἐρίηρος", gloss: "trusty — the comrades' fixed epithet, kept even here" }
+      - { w: "ἑταίρους", lemma: "ἑταῖρος", gloss: "comrades" }
+  - line: 101
+    words:
+      - { w: "σπερχομένους", lemma: "σπέρχομαι", gloss: "at speed, in haste" }
+      - { w: "νηῶν", lemma: "ναῦς", gloss: "the ships" }
+      - { w: "ἐπιβαινέμεν", lemma: "ἐπιβαίνω", gloss: "to board (epic infinitive)" }
+      - { w: "ὠκειάων,", lemma: "ὠκύς", gloss: "swift" }
+  - line: 102
+    words:
+      - { w: "μή", gloss: "lest" }
+      - { w: "πώς", lemma: "πως", gloss: "somehow, by any chance" }
+      - { w: "τις", gloss: "anyone" }
+      - { w: "λωτοῖο", lemma: "λωτός", gloss: "of the lotus" }
+      - { w: "φαγὼν", lemma: "ἐσθίω", gloss: "by eating" }
+      - { w: "νόστοιο", lemma: "νόστος", gloss: "his homecoming" }
+      - { w: "λάθηται.", lemma: "λανθάνομαι", gloss: "should forget — the episode closes on the same line-end pair that opened the danger (97): lotus eaten, homecoming forgotten" }
 etymology:
   - lemma: "λωτός"
     stages:

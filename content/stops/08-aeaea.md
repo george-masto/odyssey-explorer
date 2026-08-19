@@ -27,6 +27,99 @@ excerpt:
     - { n: 219, grc: "σαῖνον· τοὶ δʼ ἔδεισαν, ἐπεὶ ἴδον αἰνὰ πέλωρα." }
   en: "Within the forest glades they found the house of Circe, built of polished stone in a place of wide outlook, and round about it were mountain wolves and lions, whom Circe herself had bewitched; for she gave them evil drugs. Yet these beasts did not rush upon my men, but pranced about them fawningly, wagging their long tails. And as when hounds fawn around their master as he comes from a feast, for he ever brings them bits to soothe their temper, so about them fawned the stout-clawed wolves and lions; but they were seized with fear, as they saw the dread monsters."
   cite: "Od. 10.210–219 · Greek: Perseus (ed. Murray 1919) · tr. A.T. Murray 1919"
+interlinear:
+  - line: 210
+    words:
+      - { w: "εὗρον", lemma: "εὑρίσκω", gloss: "they found" }
+      - { w: "δʼ", lemma: "δέ", gloss: "and" }
+      - { w: "ἐν", gloss: "in" }
+      - { w: "βήσσῃσι", lemma: "βῆσσα", gloss: "wooded glens" }
+      - { w: "τετυγμένα", lemma: "τεύχω", gloss: "built, well-wrought" }
+      - { w: "δώματα", lemma: "δῶμα", gloss: "the halls" }
+      - { w: "Κίρκης", lemma: "Κίρκη", gloss: "of Circe" }
+  - line: 211
+    words:
+      - { w: "ξεστοῖσιν", lemma: "ξεστός", gloss: "of polished" }
+      - { w: "λάεσσι,", lemma: "λᾶας", gloss: "stones — smooth masonry deep in wild woods" }
+      - { w: "περισκέπτῳ", lemma: "περίσκεπτος", gloss: "with view all round — seen from every side, seeing every side: no one approaches unnoticed" }
+      - { w: "ἐνὶ", lemma: "ἐν", gloss: "in" }
+      - { w: "χώρῳ·", lemma: "χῶρος", gloss: "a clearing" }
+  - line: 212
+    words:
+      - { w: "ἀμφὶ", lemma: "ἀμφί", gloss: "around" }
+      - { w: "δέ", gloss: "and" }
+      - { w: "μιν", gloss: "it (the house)" }
+      - { w: "λύκοι", lemma: "λύκος", gloss: "wolves" }
+      - { w: "ἦσαν", lemma: "εἰμί", gloss: "there were" }
+      - { w: "ὀρέστεροι", lemma: "ὀρέστερος", gloss: "mountain-bred" }
+      - { w: "ἠδὲ", lemma: "ἠδέ", gloss: "and" }
+      - { w: "λέοντες,", lemma: "λέων", gloss: "lions" }
+  - line: 213
+    words:
+      - { w: "τοὺς", gloss: "whom" }
+      - { w: "αὐτὴ", lemma: "αὐτός", gloss: "she herself" }
+      - { w: "κατέθελξεν,", lemma: "καταθέλγω", gloss: "had bewitched — θέλγω is Homer's spell-casting verb (the Sirens' song gets it too), and κατα- presses it down: predators charmed docile" }
+      - { w: "ἐπεὶ", lemma: "ἐπεί", gloss: "since" }
+      - { w: "κακὰ", lemma: "κακός", gloss: "evil" }
+      - { w: "φάρμακʼ", lemma: "φάρμακον", gloss: "drugs — φάρμακον: remedy, poison and spell in one word" }
+      - { w: "ἔδωκεν.", lemma: "δίδωμι", gloss: "she had given them" }
+  - line: 214
+    words:
+      - { w: "οὐδʼ", lemma: "οὐδέ", gloss: "yet not" }
+      - { w: "οἵ", gloss: "they" }
+      - { w: "γʼ", lemma: "γε", gloss: "(emphasizing particle)" }
+      - { w: "ὡρμήθησαν", lemma: "ὁρμάω", gloss: "rushed, sprang" }
+      - { w: "ἐπʼ", lemma: "ἐπί", gloss: "at" }
+      - { w: "ἀνδράσιν,", lemma: "ἀνήρ", gloss: "the men" }
+      - { w: "ἀλλʼ", lemma: "ἀλλά", gloss: "but" }
+      - { w: "ἄρα", gloss: "instead" }
+      - { w: "τοί", gloss: "they" }
+      - { w: "γε", gloss: "(emphasizing particle)" }
+  - line: 215
+    words:
+      - { w: "οὐρῇσιν", lemma: "οὐρή", gloss: "with tails" }
+      - { w: "μακρῇσι", lemma: "μακρός", gloss: "long" }
+      - { w: "περισσαίνοντες", lemma: "περισσαίνω", gloss: "fawning about them — σαίνω is the tail-wag of a greeting dog; περι- puts it on every side of the men at once" }
+      - { w: "ἀνέσταν.", lemma: "ἀνίστημι", gloss: "they rose up (on their hind legs)" }
+  - line: 216
+    words:
+      - { w: "ὡς", gloss: "as" }
+      - { w: "δʼ", lemma: "δέ", gloss: "and" }
+      - { w: "ὅτʼ", lemma: "ὅτε", gloss: "when" }
+      - { w: "ἂν", lemma: "ἄν", gloss: "(whenever — generalizing particle)" }
+      - { w: "ἀμφὶ", lemma: "ἀμφί", gloss: "around" }
+      - { w: "ἄνακτα", lemma: "ἄναξ", gloss: "their master" }
+      - { w: "κύνες", lemma: "κύων", gloss: "dogs" }
+      - { w: "δαίτηθεν", gloss: "from the feast" }
+      - { w: "ἰόντα", lemma: "εἶμι", gloss: "coming home" }
+  - line: 217
+    words:
+      - { w: "σαίνωσʼ,", lemma: "σαίνω", gloss: "fawn" }
+      - { w: "αἰεὶ", lemma: "ἀεί", gloss: "always" }
+      - { w: "γάρ", gloss: "for" }
+      - { w: "τε", gloss: "(epic particle)" }
+      - { w: "φέρει", lemma: "φέρω", gloss: "he brings" }
+      - { w: "μειλίγματα", lemma: "μείλιγμα", gloss: "morsels — sweeteners of the temper" }
+      - { w: "θυμοῦ,", lemma: "θυμός", gloss: "of their mood" }
+  - line: 218
+    words:
+      - { w: "ὣς", lemma: "ὥς", gloss: "so" }
+      - { w: "τοὺς", gloss: "them (the men)" }
+      - { w: "ἀμφὶ", lemma: "ἀμφί", gloss: "around" }
+      - { w: "λύκοι", lemma: "λύκος", gloss: "the wolves" }
+      - { w: "κρατερώνυχες", lemma: "κρατερῶνυξ", gloss: "strong-clawed — the claws named at the very moment they go unused" }
+      - { w: "ἠδὲ", lemma: "ἠδέ", gloss: "and" }
+      - { w: "λέοντες", lemma: "λέων", gloss: "lions" }
+  - line: 219
+    words:
+      - { w: "σαῖνον·", lemma: "σαίνω", gloss: "fawned — the simile closes on the same wagging verb" }
+      - { w: "τοὶ", gloss: "they (the men)" }
+      - { w: "δʼ", lemma: "δέ", gloss: "but" }
+      - { w: "ἔδεισαν,", lemma: "δείδω", gloss: "were terrified" }
+      - { w: "ἐπεὶ", lemma: "ἐπεί", gloss: "when" }
+      - { w: "ἴδον", lemma: "εἶδον", gloss: "they saw" }
+      - { w: "αἰνὰ", lemma: "αἰνός", gloss: "dread" }
+      - { w: "πέλωρα.", lemma: "πέλωρον", gloss: "monsters — the word Scylla gets; here it lands on beasts behaving like house-dogs, and the wrongness is the horror" }
 etymology:
   - lemma: "φάρμακον"
     stages:

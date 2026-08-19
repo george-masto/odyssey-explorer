@@ -24,6 +24,74 @@ excerpt:
     - { n: 15, grc: "πήξαμεν ἀκροτάτῳ τύμβῳ ἐυῆρες ἐρετμόν." }
   en: "As soon as early Dawn appeared, the rosy-fingered, then I sent forth my comrades to the house of Circe to fetch the body of the dead Elpenor. Straightway then we cut billets of wood and gave him burial where the headland runs furthest out to sea, sorrowing and shedding big tears. But when the dead man was burned, and the armour of the dead, we heaped up a mound and dragged on to it a pillar, and on the top of the mound we planted his shapely oar."
   cite: "Od. 12.8–15 · Greek: Perseus (ed. Murray 1919) · tr. A.T. Murray 1919"
+interlinear:
+  - line: 8
+    words:
+      - { w: "ἦμος", gloss: "when" }
+      - { w: "δʼ", lemma: "δέ", gloss: "and" }
+      - { w: "ἠριγένεια", gloss: "early-born" }
+      - { w: "φάνη", lemma: "φαίνω", gloss: "appeared" }
+      - { w: "ῥοδοδάκτυλος", gloss: "rosy-fingered — Homer's most famous formula; the line that opens bright new days across the poem here opens a funeral" }
+      - { w: "Ἠώς,", lemma: "Ἠώς", gloss: "Dawn" }
+  - line: 9
+    words:
+      - { w: "δὴ", lemma: "δή", gloss: "then" }
+      - { w: "τότʼ", lemma: "τότε", gloss: "at that hour" }
+      - { w: "ἐγὼν", lemma: "ἐγώ", gloss: "I" }
+      - { w: "ἑτάρους", lemma: "ἑταῖρος", gloss: "my comrades" }
+      - { w: "προΐειν", lemma: "προΐημι", gloss: "sent ahead" }
+      - { w: "ἐς", lemma: "εἰς", gloss: "to" }
+      - { w: "δώματα", lemma: "δῶμα", gloss: "the house" }
+      - { w: "Κίρκης", lemma: "Κίρκη", gloss: "of Circe" }
+  - line: 10
+    words:
+      - { w: "οἰσέμεναι", lemma: "φέρω", gloss: "to fetch" }
+      - { w: "νεκρόν,", lemma: "νεκρός", gloss: "the body" }
+      - { w: "Ἐλπήνορα", lemma: "Ἐλπήνωρ", gloss: "Elpenor — the least of the crew, named in full like a hero" }
+      - { w: "τεθνηῶτα.", lemma: "θνῄσκω", gloss: "dead — with νεκρόν the fact is stated twice in three words, flat as a ship's log" }
+  - line: 11
+    words:
+      - { w: "φιτροὺς", lemma: "φιτρός", gloss: "logs (for the pyre)" }
+      - { w: "δʼ", lemma: "δέ", gloss: "and" }
+      - { w: "αἶψα", gloss: "quickly" }
+      - { w: "ταμόντες,", lemma: "τέμνω", gloss: "having cut" }
+      - { w: "ὅθʼ", lemma: "ὅθι", gloss: "where" }
+      - { w: "ἀκροτάτη", lemma: "ἄκρος", gloss: "furthest out" }
+      - { w: "πρόεχʼ", lemma: "προέχω", gloss: "juts" }
+      - { w: "ἀκτή,", lemma: "ἀκτή", gloss: "the headland — a grave sited where passing ships will see it" }
+  - line: 12
+    words:
+      - { w: "θάπτομεν", lemma: "θάπτω", gloss: "we buried him" }
+      - { w: "ἀχνύμενοι", lemma: "ἄχνυμαι", gloss: "grieving" }
+      - { w: "θαλερὸν", lemma: "θαλερός", gloss: "welling, big — literally 'in full bloom': tears at flood" }
+      - { w: "κατὰ", lemma: "κατά", gloss: "down" }
+      - { w: "δάκρυ", gloss: "tears (a collective singular: 'the tear')" }
+      - { w: "χέοντες.", lemma: "χέω", gloss: "pouring" }
+  - line: 13
+    words:
+      - { w: "αὐτὰρ", lemma: "αὐτάρ", gloss: "but" }
+      - { w: "ἐπεὶ", lemma: "ἐπεί", gloss: "when" }
+      - { w: "νεκρός", gloss: "the dead man" }
+      - { w: "τʼ", lemma: "τε", gloss: "both" }
+      - { w: "ἐκάη", lemma: "καίω", gloss: "was burned" }
+      - { w: "καὶ", lemma: "καί", gloss: "and" }
+      - { w: "τεύχεα", lemma: "τεῦχος", gloss: "the armor" }
+      - { w: "νεκροῦ,", lemma: "νεκρός", gloss: "of the dead man — the word tolls twice in the line; man and gear burn together, as his ghost asked (11.74)" }
+  - line: 14
+    words:
+      - { w: "τύμβον", lemma: "τύμβος", gloss: "a burial mound — the mound his ghost begged for in Hades (11.75–78): the debt owed the unburied, paid in full" }
+      - { w: "χεύαντες", lemma: "χέω", gloss: "having heaped up" }
+      - { w: "καὶ", lemma: "καί", gloss: "and" }
+      - { w: "ἐπὶ", lemma: "ἐπί", gloss: "onto it" }
+      - { w: "στήλην", lemma: "στήλη", gloss: "a grave-pillar — the στήλη, ancestor of every headstone (and of the word 'stele')" }
+      - { w: "ἐρύσαντες", lemma: "ἐρύω", gloss: "having dragged" }
+  - line: 15
+    words:
+      - { w: "πήξαμεν", lemma: "πήγνυμι", gloss: "we planted firm" }
+      - { w: "ἀκροτάτῳ", lemma: "ἄκρος", gloss: "at the very top" }
+      - { w: "τύμβῳ", lemma: "τύμβος", gloss: "of the mound" }
+      - { w: "ἐυῆρες", lemma: "εὐήρης", gloss: "well-fitted, shapely" }
+      - { w: "ἐρετμόν.", lemma: "ἐρετμόν", gloss: "his oar — the tool as the man: the one he pulled in life among his comrades, raised as his headstone — the same formula, ἐυῆρες ἐρετμόν, Tiresias uses for the oar Odysseus must one day plant inland (11.129)" }
 etymology:
   - lemma: "Ἐλπήνωρ"
     stages:

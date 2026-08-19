@@ -84,10 +84,15 @@ for (const f of files) {
 		if (!y.excerpt.en?.length) errors.push(`${f}: excerpt.en empty`);
 	}
 
-	// interlinear rejoin
+	// interlinear: required on every stop, covering every excerpt line, tokens
+	// rejoining the CTS-verified text exactly.
 	if (y.interlinear) {
 		interlinearCount++;
 		const byLine = new Map((y.excerpt?.lines ?? []).map((l) => [l.n, norm(l.grc)]));
+		if (y.excerpt && y.interlinear.length !== y.excerpt.lines.length)
+			errors.push(
+				`${f}: interlinear covers ${y.interlinear.length}/${y.excerpt.lines.length} excerpt lines`
+			);
 		for (const il of y.interlinear) {
 			const joined = norm(il.words.map((w) => w.w).join(' '));
 			const target = byLine.get(il.line);
@@ -96,8 +101,8 @@ for (const f of files) {
 				errors.push(`${f}: interlinear rejoin mismatch at line ${il.line}\n    join: ${joined}\n    line: ${target}`);
 			for (const w of il.words) if (!w.gloss) errors.push(`${f}: word '${w.w}' (line ${il.line}) missing gloss`);
 		}
-	} else if (y.marquee_passage) {
-		errors.push(`${f}: marquee stop without interlinear`);
+	} else if (y.excerpt) {
+		errors.push(`${f}: no interlinear (every stop's excerpt is tappable)`);
 	}
 
 	// tidbits

@@ -20,6 +20,42 @@ excerpt:
     - { n: 491, grc: "ἢ πᾶσιν νεκύεσσι καταφθιμένοισιν ἀνάσσειν." }
   en: "Nay, seek not to speak soothingly to me of death, glorious Odysseus. I should choose, so I might live on earth, to serve as the hireling of another, of some portionless man whose livelihood was but small, rather than to be lord over all the dead that have perished."
   cite: "Od. 11.488–491 · Greek: Perseus (ed. Murray 1919) · tr. A.T. Murray 1919"
+interlinear:
+  - line: 488
+    words:
+      - { w: "μὴ", lemma: "μή", gloss: "do not" }
+      - { w: "δή", gloss: "(urgent particle: 'do not, I tell you')" }
+      - { w: "μοι", lemma: "ἐγώ", gloss: "to me" }
+      - { w: "θάνατόν", lemma: "θάνατος", gloss: "death" }
+      - { w: "γε", gloss: "of all things — the particle isolates 'death' for scorn" }
+      - { w: "παραύδα,", lemma: "παραυδάω", gloss: "talk soothingly of — Odysseus has just called him blessed among the dead; the consolation is refused before it is finished" }
+      - { w: "φαίδιμʼ", lemma: "φαίδιμος", gloss: "shining, glorious" }
+      - { w: "Ὀδυσσεῦ.", lemma: "Ὀδυσσεύς", gloss: "Odysseus" }
+  - line: 489
+    words:
+      - { w: "βουλοίμην", lemma: "βούλομαι", gloss: "I would rather — the verb of deliberate choice, from the man who once chose a short life with glory" }
+      - { w: "κʼ", lemma: "κε(ν)", gloss: "(would — potential particle)" }
+      - { w: "ἐπάρουρος", gloss: "bound to the soil — a hand on someone else's plow-land" }
+      - { w: "ἐὼν", lemma: "εἰμί", gloss: "being" }
+      - { w: "θητευέμεν", lemma: "θητεύω", gloss: "to serve as a θής — the landless day-laborer, the bottom rung of the free world: no plot, no household, no security; even a slave belonged somewhere" }
+      - { w: "ἄλλῳ,", lemma: "ἄλλος", gloss: "for another man" }
+  - line: 490
+    words:
+      - { w: "ἀνδρὶ", lemma: "ἀνήρ", gloss: "a man" }
+      - { w: "παρʼ", lemma: "παρά", gloss: "in the service of" }
+      - { w: "ἀκλήρῳ,", lemma: "ἄκληρος", gloss: "landless — without a κλῆρος, an allotted plot: he picks the poorest master imaginable" }
+      - { w: "ᾧ", lemma: "ὅς", gloss: "who" }
+      - { w: "μὴ", lemma: "μή", gloss: "no" }
+      - { w: "βίοτος", gloss: "livelihood" }
+      - { w: "πολὺς", lemma: "πολύς", gloss: "much" }
+      - { w: "εἴη,", lemma: "εἰμί", gloss: "has (lit. 'might be to him')" }
+  - line: 491
+    words:
+      - { w: "ἢ", lemma: "ἤ", gloss: "than" }
+      - { w: "πᾶσιν", lemma: "πᾶς", gloss: "over all" }
+      - { w: "νεκύεσσι", lemma: "νέκυς", gloss: "the dead" }
+      - { w: "καταφθιμένοισιν", lemma: "καταφθίω", gloss: "the perished, the wasted-away" }
+      - { w: "ἀνάσσειν.", lemma: "ἀνάσσω", gloss: "to be lord — the verb of ἄναξ, kingship's grandest title: dominion over all the dead traded for day-wages in the sun, the Iliad's bargain repudiated in its own vocabulary" }
 etymology:
   - lemma: "νέκυς"
     stages:

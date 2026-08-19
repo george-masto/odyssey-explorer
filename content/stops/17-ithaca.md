@@ -25,6 +25,96 @@ excerpt:
     - { n: 191, grc: "ἀκμηνὸς θαλέθων· πάχετος δʼ ἦν ἠΰτε κίων." }
   en: "Woman, truly this is a bitter word that thou hast spoken. Who has set my bed elsewhere? Hard would it be for one, though never so skilled, unless a god himself should come and easily by his will set it in another place. But of men there is no mortal that lives, be he never so young and strong, who could easily pry it from its place, for a great token is wrought in the fashioned bed, and it was I that built it and none other. A bush of long-leafed olive was growing within the court, strong and vigorous, and girth it was like a pillar."
   cite: "Od. 23.183–191 · Greek: Perseus (ed. Murray 1919) · tr. A.T. Murray 1919"
+interlinear:
+  - line: 183
+    words:
+      - { w: "ὦ", gloss: "O" }
+      - { w: "γύναι,", lemma: "γυνή", gloss: "woman, wife" }
+      - { w: "ἦ", gloss: "truly" }
+      - { w: "μάλα", gloss: "indeed" }
+      - { w: "τοῦτο", lemma: "οὗτος", gloss: "this" }
+      - { w: "ἔπος", gloss: "word" }
+      - { w: "θυμαλγὲς", lemma: "θυμαλγής", gloss: "heart-stinging — θυμός + ἄλγος, pain in the core of him: her trap lands instantly" }
+      - { w: "ἔειπες·", lemma: "εἶπον", gloss: "you have spoken" }
+  - line: 184
+    words:
+      - { w: "τίς", gloss: "who?" }
+      - { w: "δέ", gloss: "and" }
+      - { w: "μοι", lemma: "ἐγώ", gloss: "my" }
+      - { w: "ἄλλοσε", gloss: "elsewhere" }
+      - { w: "θῆκε", lemma: "τίθημι", gloss: "has set" }
+      - { w: "λέχος;", lemma: "λέχος", gloss: "bed?" }
+      - { w: "χαλεπὸν", lemma: "χαλεπός", gloss: "hard" }
+      - { w: "δέ", gloss: "and" }
+      - { w: "κεν", lemma: "κε(ν)", gloss: "(would — potential particle)" }
+      - { w: "εἴη", lemma: "εἰμί", gloss: "it would be" }
+  - line: 185
+    words:
+      - { w: "καὶ", lemma: "καί", gloss: "even" }
+      - { w: "μάλʼ", lemma: "μάλα", gloss: "for a very" }
+      - { w: "ἐπισταμένῳ,", lemma: "ἐπίσταμαι", gloss: "skilled man" }
+      - { w: "ὅτε", gloss: "unless" }
+      - { w: "μὴ", lemma: "μή", gloss: "(negative)" }
+      - { w: "θεὸς", lemma: "θεός", gloss: "a god" }
+      - { w: "αὐτὸς", lemma: "αὐτός", gloss: "himself" }
+      - { w: "ἐπελθὼν", lemma: "ἐπέρχομαι", gloss: "coming" }
+  - line: 186
+    words:
+      - { w: "ῥηϊδίως", lemma: "ῥηΐδιος", gloss: "easily" }
+      - { w: "ἐθέλων", lemma: "ἐθέλω", gloss: "if he willed" }
+      - { w: "θείη", lemma: "τίθημι", gloss: "might set it" }
+      - { w: "ἄλλῃ", lemma: "ἄλλος", gloss: "in another" }
+      - { w: "ἐνὶ", lemma: "ἐν", gloss: "in" }
+      - { w: "χώρῃ.", lemma: "χώρα", gloss: "place" }
+  - line: 187
+    words:
+      - { w: "ἀνδρῶν", lemma: "ἀνήρ", gloss: "of men" }
+      - { w: "δʼ", lemma: "δέ", gloss: "but" }
+      - { w: "οὔ", lemma: "οὐ", gloss: "no" }
+      - { w: "κέν", lemma: "κε(ν)", gloss: "(would)" }
+      - { w: "τις", gloss: "one" }
+      - { w: "ζωὸς", lemma: "ζωός", gloss: "living" }
+      - { w: "βροτός,", lemma: "βροτός", gloss: "mortal" }
+      - { w: "οὐδὲ", lemma: "οὐδέ", gloss: "not even" }
+      - { w: "μάλʼ", lemma: "μάλα", gloss: "in the full" }
+      - { w: "ἡβῶν,", lemma: "ἡβάω", gloss: "prime of youth" }
+  - line: 188
+    words:
+      - { w: "ῥεῖα", gloss: "easily" }
+      - { w: "μετοχλίσσειεν,", lemma: "μετοχλίζω", gloss: "could lever it aside — a crowbar of a verb, built on ὀχλίζω, to heave with a bar" }
+      - { w: "ἐπεὶ", lemma: "ἐπεί", gloss: "since" }
+      - { w: "μέγα", lemma: "μέγας", gloss: "a great" }
+      - { w: "σῆμα", gloss: "token — the μέγα σῆμα, a sign that proves identity: a secret exactly three living people share" }
+      - { w: "τέτυκται", lemma: "τεύχω", gloss: "is wrought" }
+  - line: 189
+    words:
+      - { w: "ἐν", gloss: "in" }
+      - { w: "λέχει", lemma: "λέχος", gloss: "the bed" }
+      - { w: "ἀσκητῷ·", lemma: "ἀσκητός", gloss: "artfully worked" }
+      - { w: "τὸ", gloss: "it" }
+      - { w: "δʼ", lemma: "δέ", gloss: "and" }
+      - { w: "ἐγὼ", lemma: "ἐγώ", gloss: "I" }
+      - { w: "κάμον", lemma: "κάμνω", gloss: "toiled to make — the verb of hands-on labor: the king was its carpenter" }
+      - { w: "οὐδέ", gloss: "and no" }
+      - { w: "τις", gloss: "one" }
+      - { w: "ἄλλος.", lemma: "ἄλλος", gloss: "else" }
+  - line: 190
+    words:
+      - { w: "θάμνος", gloss: "a bush, a young trunk" }
+      - { w: "ἔφυ", lemma: "φύω", gloss: "grew" }
+      - { w: "τανύφυλλος", gloss: "long-leafed" }
+      - { w: "ἐλαίης", lemma: "ἐλαία", gloss: "of olive — the marriage bed is a living, rooted tree: to move it you would have to kill it" }
+      - { w: "ἕρκεος", lemma: "ἕρκος", gloss: "the courtyard wall" }
+      - { w: "ἐντός,", lemma: "ἐντός", gloss: "within" }
+  - line: 191
+    words:
+      - { w: "ἀκμηνὸς", lemma: "ἀκμηνός", gloss: "at full strength" }
+      - { w: "θαλέθων·", lemma: "θαλέθω", gloss: "flourishing" }
+      - { w: "πάχετος", gloss: "thick" }
+      - { w: "δʼ", lemma: "δέ", gloss: "and" }
+      - { w: "ἦν", lemma: "εἰμί", gloss: "it was" }
+      - { w: "ἠΰτε", gloss: "like" }
+      - { w: "κίων.", lemma: "κίων", gloss: "a pillar — the tree already stood like architecture; he built the bedroom around it" }
 etymology:
   - lemma: "νόστος"
     stages:

@@ -24,6 +24,86 @@ excerpt:
     - { n: 46, grc: "ἔσφαζον παρὰ θῖνα καὶ εἰλίποδας ἕλικας βοῦς·" }
   en: "From Ilios the wind bore me and brought me to the Cicones, to Ismarus. There I sacked the city and slew the men; and from the city we took their wives and great store of treasure, and divided them among us, that so far as lay in me no man might go defrauded of an equal share. Then verily I gave command that we should flee with swift foot, but the others in their great folly did not hearken. But there much wine was drunk, and many sheep they slew by the shore, and sleek kine of shambling gait."
   cite: "Od. 9.39–46 · Greek: Perseus (ed. Murray 1919) · tr. A.T. Murray 1919"
+interlinear:
+  - line: 39
+    words:
+      - { w: "Ἰλιόθεν", lemma: "Ἴλιος", gloss: "from Ilios, Troy — the very first word of the wanderings: the whole tale launches out of the war in a single adverb" }
+      - { w: "με", lemma: "ἐγώ", gloss: "me" }
+      - { w: "φέρων", lemma: "φέρω", gloss: "carrying" }
+      - { w: "ἄνεμος", gloss: "the wind — the story's first subject; its hero is just 'me', carried" }
+      - { w: "Κικόνεσσι", lemma: "Κίκονες", gloss: "to the Cicones — Thracian allies of fallen Troy" }
+      - { w: "πέλασσεν,", lemma: "πελάζω", gloss: "brought (me) close, drove me upon" }
+  - line: 40
+    words:
+      - { w: "Ἰσμάρῳ.", lemma: "Ἴσμαρος", gloss: "at Ismarus" }
+      - { w: "ἔνθα", gloss: "there" }
+      - { w: "δʼ", lemma: "δέ", gloss: "and" }
+      - { w: "ἐγὼ", lemma: "ἐγώ", gloss: "I" }
+      - { w: "πόλιν", lemma: "πόλις", gloss: "the city" }
+      - { w: "ἔπραθον,", lemma: "πέρθω", gloss: "I sacked — the proem's own verb for Troy (1.2): the war's habits sail on with him" }
+      - { w: "ὤλεσα", lemma: "ὄλλυμι", gloss: "I destroyed" }
+      - { w: "δʼ", lemma: "δέ", gloss: "and" }
+      - { w: "αὐτούς·", lemma: "αὐτός", gloss: "the men themselves" }
+  - line: 41
+    words:
+      - { w: "ἐκ", gloss: "out of" }
+      - { w: "πόλιος", lemma: "πόλις", gloss: "the city" }
+      - { w: "δʼ", lemma: "δέ", gloss: "and" }
+      - { w: "ἀλόχους", lemma: "ἄλοχος", gloss: "the wives — listed flatly with the goods, as plunder" }
+      - { w: "καὶ", lemma: "καί", gloss: "and" }
+      - { w: "κτήματα", lemma: "κτῆμα", gloss: "possessions, treasure" }
+      - { w: "πολλὰ", lemma: "πολύς", gloss: "many" }
+      - { w: "λαβόντες", lemma: "λαμβάνω", gloss: "having seized" }
+  - line: 42
+    words:
+      - { w: "δασσάμεθʼ,", lemma: "δατέομαι", gloss: "we divided (the spoil)" }
+      - { w: "ὡς", gloss: "so that" }
+      - { w: "μή", gloss: "not" }
+      - { w: "τίς", lemma: "τις", gloss: "any man" }
+      - { w: "μοι", lemma: "ἐγώ", gloss: "on my watch (lit. 'for me')" }
+      - { w: "ἀτεμβόμενος", lemma: "ἀτέμβω", gloss: "cheated, shorted" }
+      - { w: "κίοι", lemma: "κίω", gloss: "should go off" }
+      - { w: "ἴσης.", lemma: "ἴσος", gloss: "of an equal share — even piracy keeps fair accounts" }
+  - line: 43
+    words:
+      - { w: "ἔνθʼ", lemma: "ἔνθα", gloss: "then" }
+      - { w: "ἦ", gloss: "truly" }
+      - { w: "τοι", gloss: "mark you" }
+      - { w: "μὲν", lemma: "μέν", gloss: "on my side (contrast coming)" }
+      - { w: "ἐγὼ", lemma: "ἐγώ", gloss: "I" }
+      - { w: "διερῷ", lemma: "διερός", gloss: "with nimble — or 'wet'? a rare word argued over since antiquity" }
+      - { w: "ποδὶ", lemma: "πούς", gloss: "foot" }
+      - { w: "φευγέμεν", lemma: "φεύγω", gloss: "to flee (epic infinitive)" }
+      - { w: "ἡμέας", lemma: "ἡμεῖς", gloss: "us" }
+  - line: 44
+    words:
+      - { w: "ἠνώγεα,", lemma: "ἄνωγα", gloss: "I had ordered" }
+      - { w: "τοὶ", gloss: "they" }
+      - { w: "δὲ", lemma: "δέ", gloss: "but" }
+      - { w: "μέγα", lemma: "μέγας", gloss: "greatly, utterly" }
+      - { w: "νήπιοι", lemma: "νήπιος", gloss: "fools — literally 'infants': the narrator's verdict on his own crew, and the same word the proem stamps on them (1.8)" }
+      - { w: "οὐκ", lemma: "οὐ", gloss: "not" }
+      - { w: "ἐπίθοντο.", lemma: "πείθω", gloss: "did (not) obey" }
+  - line: 45
+    words:
+      - { w: "ἔνθα", gloss: "there" }
+      - { w: "δὲ", lemma: "δέ", gloss: "and" }
+      - { w: "πολλὸν", lemma: "πολύς", gloss: "much" }
+      - { w: "μὲν", lemma: "μέν", gloss: "on the one hand (its pair follows)" }
+      - { w: "μέθυ", gloss: "wine — kin to English 'mead'" }
+      - { w: "πίνετο,", lemma: "πίνω", gloss: "was being drunk — the imperfect keeps it flowing" }
+      - { w: "πολλὰ", lemma: "πολύς", gloss: "many" }
+      - { w: "δὲ", lemma: "δέ", gloss: "and" }
+      - { w: "μῆλα", lemma: "μῆλον", gloss: "sheep" }
+  - line: 46
+    words:
+      - { w: "ἔσφαζον", lemma: "σφάζω", gloss: "they kept slaughtering" }
+      - { w: "παρὰ", lemma: "παρά", gloss: "along" }
+      - { w: "θῖνα", lemma: "θίς", gloss: "the beach" }
+      - { w: "καὶ", lemma: "καί", gloss: "and" }
+      - { w: "εἰλίποδας", lemma: "εἰλίπους", gloss: "rolling-gaited — the oxen's fixed epithet" }
+      - { w: "ἕλικας", lemma: "ἕλιξ", gloss: "crook-horned" }
+      - { w: "βοῦς·", lemma: "βοῦς", gloss: "cattle" }
 etymology:
   - lemma: "Μάρων"
     stages:

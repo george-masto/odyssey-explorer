@@ -22,6 +22,62 @@ excerpt:
     - { n: 33, grc: "δῶχʼ ἑτάρων, ἵνα θᾶσσον ἱκοίμεθα πατρίδα γαῖαν·" }
   en: "For nine days we sailed, night and day alike, and now on the tenth our native land came in sight, and lo, we were so near that we saw men tending the beacon fires. Then upon me came sweet sleep in my weariness, for I had ever kept in hand the sheet of the ship, and had yielded it to none other of my comrades, that we might the sooner come to our native land."
   cite: "Od. 10.28–33 · Greek: Perseus (ed. Murray 1919) · tr. A.T. Murray 1919"
+interlinear:
+  - line: 28
+    words:
+      - { w: "ἐννῆμαρ", gloss: "for nine days" }
+      - { w: "μὲν", lemma: "μέν", gloss: "on the one hand (the tenth day answers it)" }
+      - { w: "ὁμῶς", gloss: "without a break, alike" }
+      - { w: "πλέομεν", lemma: "πλέω", gloss: "we sailed" }
+      - { w: "νύκτας", lemma: "νύξ", gloss: "nights" }
+      - { w: "τε", gloss: "(both)" }
+      - { w: "καὶ", lemma: "καί", gloss: "and" }
+      - { w: "ἦμαρ,", lemma: "ἦμαρ", gloss: "day" }
+  - line: 29
+    words:
+      - { w: "τῇ", gloss: "on the" }
+      - { w: "δεκάτῃ", lemma: "δέκατος", gloss: "tenth (day)" }
+      - { w: "δʼ", lemma: "δέ", gloss: "and" }
+      - { w: "ἤδη", gloss: "at last, already" }
+      - { w: "ἀνεφαίνετο", lemma: "ἀναφαίνω", gloss: "was rising into view — imperfect: the land lifting over the horizon, degree by degree" }
+      - { w: "πατρὶς", lemma: "πατρίς", gloss: "native, of our fathers" }
+      - { w: "ἄρουρα,", lemma: "ἄρουρα", gloss: "plowland — home shows itself first as worked earth, not harbor or hall" }
+  - line: 30
+    words:
+      - { w: "καὶ", lemma: "καί", gloss: "and" }
+      - { w: "δὴ", lemma: "δή", gloss: "indeed — καὶ δή: 'and there —', the particle of sudden sight" }
+      - { w: "πυρπολέοντας", lemma: "πυρπολέω", gloss: "(men) tending fires — so near Ithaca they can see figures feeding the watch-fires; they will not be this close again for years" }
+      - { w: "ἐλεύσσομεν", lemma: "λεύσσω", gloss: "we could make out" }
+      - { w: "ἐγγὺς", lemma: "ἐγγύς", gloss: "near" }
+      - { w: "ἐόντες·", lemma: "εἰμί", gloss: "being (so close)" }
+  - line: 31
+    words:
+      - { w: "ἔνθʼ", lemma: "ἔνθα", gloss: "then" }
+      - { w: "ἐμὲ", lemma: "ἐγώ", gloss: "me" }
+      - { w: "μὲν", lemma: "μέν", gloss: "for my part (the crew's turn comes next)" }
+      - { w: "γλυκὺς", lemma: "γλυκύς", gloss: "sweet" }
+      - { w: "ὕπνος", gloss: "sleep" }
+      - { w: "ἐπήλυθε", lemma: "ἐπέρχομαι", gloss: "stole over" }
+      - { w: "κεκμηῶτα,", lemma: "κάμνω", gloss: "worn out — a perfect participle: nine sleepless days banked in one word" }
+  - line: 32
+    words:
+      - { w: "αἰεὶ", lemma: "ἀεί", gloss: "the whole time" }
+      - { w: "γὰρ", lemma: "γάρ", gloss: "for" }
+      - { w: "πόδα", lemma: "πούς", gloss: "the sheet — literally the ship's 'foot': the rope that trims the sail" }
+      - { w: "νηὸς", lemma: "ναῦς", gloss: "of the ship" }
+      - { w: "ἐνώμων,", lemma: "νωμάω", gloss: "I kept working" }
+      - { w: "οὐδέ", gloss: "nor" }
+      - { w: "τῳ", lemma: "τις", gloss: "to any" }
+      - { w: "ἄλλῳ", lemma: "ἄλλος", gloss: "other" }
+  - line: 33
+    words:
+      - { w: "δῶχʼ", lemma: "δίδωμι", gloss: "did I give (it)" }
+      - { w: "ἑτάρων,", lemma: "ἑταῖρος", gloss: "of my comrades" }
+      - { w: "ἵνα", gloss: "so that" }
+      - { w: "θᾶσσον", lemma: "ταχύς", gloss: "the sooner — the haste that costs him the arrival" }
+      - { w: "ἱκοίμεθα", lemma: "ἱκνέομαι", gloss: "we might reach" }
+      - { w: "πατρίδα", lemma: "πατρίς", gloss: "our native" }
+      - { w: "γαῖαν·", lemma: "γαῖα", gloss: "land — the goal named one scene before the crew opens the bag" }
 etymology:
   - lemma: "Αἴολος"
     stages:

@@ -22,6 +22,59 @@ excerpt:
     - { n: 84, grc: "γαίης Λωτοφάγων, οἵ τʼ ἄνθινον εἶδαρ ἔδουσιν." }
   en: "And now all unscathed should I have reached my native land, but the wave and the current and the North Wind beat me back as I was rounding Malea, and drove me from my course past Cythera. Thence for nine days' space I was borne by direful winds over the teeming deep; but on the tenth we set foot on the land of the Lotus-eaters, who eat a flowery food."
   cite: "Od. 9.79–84 · Greek: Perseus (ed. Murray 1919) · tr. A.T. Murray 1919"
+interlinear:
+  - line: 79
+    words:
+      - { w: "καί", gloss: "and" }
+      - { w: "νύ", lemma: "νυ", gloss: "now" }
+      - { w: "κεν", lemma: "κε(ν)", gloss: "(would have — the particle of the might-have-been)" }
+      - { w: "ἀσκηθὴς", lemma: "ἀσκηθής", gloss: "unscathed" }
+      - { w: "ἱκόμην", lemma: "ἱκνέομαι", gloss: "I would have arrived — a one-line glimpse of the Odyssey that never happened" }
+      - { w: "ἐς", lemma: "εἰς", gloss: "to" }
+      - { w: "πατρίδα", lemma: "πατρίς", gloss: "my native" }
+      - { w: "γαῖαν·", lemma: "γαῖα", gloss: "land — πατρίδα γαῖαν, the homeland formula" }
+  - line: 80
+    words:
+      - { w: "ἀλλά", gloss: "but" }
+      - { w: "με", lemma: "ἐγώ", gloss: "me" }
+      - { w: "κῦμα", gloss: "the swell" }
+      - { w: "ῥόος", gloss: "the current" }
+      - { w: "τε", gloss: "and" }
+      - { w: "περιγνάμπτοντα", lemma: "περιγνάμπτω", gloss: "as I was doubling, bending around" }
+      - { w: "Μάλειαν", lemma: "Μάλεια", gloss: "Malea — the cape on which Greek homecomings founder" }
+  - line: 81
+    words:
+      - { w: "καὶ", lemma: "καί", gloss: "and" }
+      - { w: "Βορέης", lemma: "Βορέας", gloss: "the North Wind, Boreas" }
+      - { w: "ἀπέωσε,", lemma: "ἀπωθέω", gloss: "thrust (me) back" }
+      - { w: "παρέπλαγξεν", lemma: "παραπλάζω", gloss: "swept me off course — built on πλάζω, the verb of the proem's 'he was driven wandering' (1.2): the wandering starts here" }
+      - { w: "δὲ", lemma: "δέ", gloss: "and" }
+      - { w: "Κυθήρων.", lemma: "Κύθηρα", gloss: "past Cythera — the last recognizable island: beyond this word, the map gives out" }
+  - line: 82
+    words:
+      - { w: "ἔνθεν", gloss: "from there" }
+      - { w: "δʼ", lemma: "δέ", gloss: "and" }
+      - { w: "ἐννῆμαρ", gloss: "for nine days — Homer's standard measure of lostness" }
+      - { w: "φερόμην", lemma: "φέρω", gloss: "I was carried — passive: the storm holds the verbs now" }
+      - { w: "ὀλοοῖς", lemma: "ὀλοός", gloss: "by deadly" }
+      - { w: "ἀνέμοισιν", lemma: "ἄνεμος", gloss: "winds" }
+  - line: 83
+    words:
+      - { w: "πόντον", lemma: "πόντος", gloss: "the deep" }
+      - { w: "ἐπʼ", lemma: "ἐπί", gloss: "over" }
+      - { w: "ἰχθυόεντα·", lemma: "ἰχθυόεις", gloss: "teeming with fish — the sea's stock epithet: a home for fish, not for men" }
+      - { w: "ἀτὰρ", lemma: "ἀτάρ", gloss: "but" }
+      - { w: "δεκάτῃ", lemma: "δέκατος", gloss: "on the tenth (day)" }
+      - { w: "ἐπέβημεν", lemma: "ἐπιβαίνω", gloss: "we set foot on" }
+  - line: 84
+    words:
+      - { w: "γαίης", lemma: "γαῖα", gloss: "the land" }
+      - { w: "Λωτοφάγων,", lemma: "Λωτοφάγοι", gloss: "of the Lotus-eaters — named only for what they do: eat lotus" }
+      - { w: "οἵ", lemma: "ὅς", gloss: "who" }
+      - { w: "τʼ", lemma: "τε", gloss: "(epic particle of timeless habits)" }
+      - { w: "ἄνθινον", lemma: "ἄνθινος", gloss: "flowery — food made of blossom" }
+      - { w: "εἶδαρ", gloss: "food" }
+      - { w: "ἔδουσιν.", lemma: "ἔδω", gloss: "they eat — cousin of the English word" }
 etymology:
   - lemma: "Κύθηρα"
     stages:

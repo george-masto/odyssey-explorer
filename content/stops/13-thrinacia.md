@@ -21,6 +21,52 @@ excerpt:
     - { n: 398, grc: "δαίνυντʼ Ἠελίοιο βοῶν ἐλάσαντες ἀρίστας·" }
   en: "For my men, then, the gods straightway shewed forth portents. The hides crawled, the flesh, both roast and raw, bellowed upon the spits, and there was a lowing as of kine. For six days, then, my trusty comrades feasted on the best of the kine of Helios which they had driven off."
   cite: "Od. 12.394–398 · Greek: Perseus (ed. Murray 1919) · tr. A.T. Murray 1919"
+interlinear:
+  - line: 394
+    words:
+      - { w: "τοῖσιν", gloss: "for them — the crew, not their sleeping captain" }
+      - { w: "δʼ", lemma: "δέ", gloss: "and" }
+      - { w: "αὐτίκʼ", lemma: "αὐτίκα", gloss: "at once" }
+      - { w: "ἔπειτα", gloss: "thereupon" }
+      - { w: "θεοὶ", lemma: "θεός", gloss: "the gods" }
+      - { w: "τέραα", lemma: "τέρας", gloss: "portents, omens" }
+      - { w: "προύφαινον·", lemma: "προφαίνω", gloss: "began showing forth — imperfect: the signs keep coming" }
+  - line: 395
+    words:
+      - { w: "εἷρπον", lemma: "ἕρπω", gloss: "crawled — the verb of snakes and slow creatures: flayed hides moving on their own across the ground" }
+      - { w: "μὲν", lemma: "μέν", gloss: "on the one hand" }
+      - { w: "ῥινοί,", lemma: "ῥινός", gloss: "the hides" }
+      - { w: "κρέα", lemma: "κρέας", gloss: "the flesh" }
+      - { w: "δʼ", lemma: "δέ", gloss: "and" }
+      - { w: "ἀμφʼ", lemma: "ἀμφί", gloss: "around, on" }
+      - { w: "ὀβελοῖσι", lemma: "ὀβελός", gloss: "the spits" }
+      - { w: "μεμύκει,", lemma: "μυκάομαι", gloss: "had begun to low — the moo is in the word (mu-): meat on the skewers, dead and roasting, still crying like the living animal" }
+  - line: 396
+    words:
+      - { w: "ὀπταλέα", lemma: "ὀπταλέος", gloss: "roasted" }
+      - { w: "τε", gloss: "both" }
+      - { w: "καὶ", lemma: "καί", gloss: "and" }
+      - { w: "ὠμά,", lemma: "ὠμός", gloss: "raw" }
+      - { w: "βοῶν", lemma: "βοῦς", gloss: "of cattle" }
+      - { w: "δʼ", lemma: "δέ", gloss: "and" }
+      - { w: "ὣς", lemma: "ὥς", gloss: "as if of" }
+      - { w: "γίγνετο", lemma: "γίγνομαι", gloss: "there arose" }
+      - { w: "φωνή.", lemma: "φωνή", gloss: "a voice — the sound of a live herd from a dead feast" }
+  - line: 397
+    words:
+      - { w: "ἑξῆμαρ", gloss: "for six days" }
+      - { w: "μὲν", lemma: "μέν", gloss: "then" }
+      - { w: "ἔπειτα", gloss: "thereafter" }
+      - { w: "ἐμοὶ", lemma: "ἐγώ", gloss: "my" }
+      - { w: "ἐρίηρες", lemma: "ἐρίηρος", gloss: "trusty, loyal — the formulaic epithet, kept even here, six days into the sacrilege" }
+      - { w: "ἑταῖροι", lemma: "ἑταῖρος", gloss: "companions" }
+  - line: 398
+    words:
+      - { w: "δαίνυντʼ", lemma: "δαίνυμι", gloss: "feasted on" }
+      - { w: "Ἠελίοιο", lemma: "Ἥλιος", gloss: "of Helios, the Sun — the owner named mid-feast" }
+      - { w: "βοῶν", lemma: "βοῦς", gloss: "of the cattle" }
+      - { w: "ἐλάσαντες", lemma: "ἐλαύνω", gloss: "having driven off" }
+      - { w: "ἀρίστας·", lemma: "ἄριστος", gloss: "the best ones — not desperate scraps: they culled the finest of the god's herd" }
 etymology:
   - lemma: "Θρινακίη"
     stages:
