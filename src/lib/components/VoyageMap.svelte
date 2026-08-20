@@ -21,10 +21,15 @@
 	const reducedMotion =
 		typeof matchMedia !== 'undefined' && matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+	// Phones get ~30% larger map labels (chosen at load; a mobile viewer misread
+	// the tiny region toponyms as stop labels).
+	const smallScreen =
+		typeof matchMedia !== 'undefined' && matchMedia('(max-width: 760px)').matches;
+
 	onMount(() => {
 		map = new MaplibreMap({
 			container,
-			style: explorerStyle(),
+			style: explorerStyle(smallScreen ? 1.3 : 1),
 			center: [current.coords.lng, current.coords.lat],
 			zoom: current.camera.zoom,
 			// North is always up (post-M2 user feedback): no rotation, no tilt.

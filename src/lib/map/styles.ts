@@ -22,8 +22,20 @@ const EOX_ATTR =
  *   `m-*` — the modern world: full Sentinel-2 cloudless basemap + modern names.
  * Hidden raster layers fetch no tiles, so the satellite costs nothing until
  * the reveal.
+ *
+ * `textScale` bumps every label for small screens (phones run ~1.3 — a mobile
+ * viewer mistook the ΗΠΕΙΡΟΣ region label for Ithaca's stop label at default
+ * sizes). Region toponyms are letter-spaced UPPERCASE, cartography's oldest
+ * trick for saying "this names an area, not a point".
  */
-export function explorerStyle(): StyleSpecification {
+export function explorerStyle(textScale = 1): StyleSpecification {
+	const ts = (n: number) => Math.round(n * textScale * 10) / 10;
+	// Per-feature zoom gating: a toponym appears only at/after its `minzoom`.
+	const gated: import('maplibre-gl').ExpressionSpecification = [
+		'>=',
+		['zoom'],
+		['get', 'minzoom']
+	];
 	return {
 		version: 8,
 		name: 'odyssey-explorer',
@@ -99,7 +111,7 @@ export function explorerStyle(): StyleSpecification {
 				id: 'a-toponym-sea',
 				type: 'symbol',
 				source: 'ancient-toponyms',
-				filter: ['==', ['get', 'kind'], 'sea'],
+				filter: ['all', ['==', ['get', 'kind'], 'sea'], gated],
 				layout: {
 					// "Αἰγαῖον πέλαγος (Aegean Sea)" — English rides along, smaller.
 					'text-field': [
@@ -112,12 +124,12 @@ export function explorerStyle(): StyleSpecification {
 						{ 'font-scale': 0.72 }
 					],
 					'text-font': ['Noto Sans Italic'],
-					'text-size': ['interpolate', ['linear'], ['zoom'], 4, 12, 8, 17],
+					'text-size': ['interpolate', ['linear'], ['zoom'], 4, ts(12), 8, ts(17)],
 					'text-letter-spacing': 0.25,
 					'text-max-width': 20
 				},
 				paint: {
-					'text-color': '#4a3a1c',
+					'text-color': '#55431f',
 					'text-halo-color': '#f0e8d2',
 					'text-halo-width': 1.2
 				}
@@ -126,25 +138,27 @@ export function explorerStyle(): StyleSpecification {
 				id: 'a-toponym-land',
 				type: 'symbol',
 				source: 'ancient-toponyms',
-				filter: ['==', ['get', 'kind'], 'land'],
+				filter: ['all', ['==', ['get', 'kind'], 'land'], gated],
 				layout: {
+					// Regions read as SPACED CAPS — unmistakably areas, not stops.
 					'text-field': [
 						'format',
 						['get', 'grc'],
-						{ 'text-font': ['literal', ['Noto Sans Bold']] },
+						{},
 						'\n',
 						{},
 						['concat', '(', ['get', 'en'], ')'],
-						{ 'font-scale': 0.72, 'text-font': ['literal', ['Noto Sans Italic']] }
+						{ 'font-scale': 0.68, 'text-font': ['literal', ['Noto Sans Italic']] }
 					],
-					'text-font': ['Noto Sans Bold'],
-					'text-size': ['interpolate', ['linear'], ['zoom'], 5, 11, 9, 15],
-					'text-letter-spacing': 0.2
+					'text-font': ['Noto Sans Regular'],
+					'text-transform': 'uppercase',
+					'text-size': ['interpolate', ['linear'], ['zoom'], 5, ts(10.5), 9, ts(14)],
+					'text-letter-spacing': 0.5
 				},
 				paint: {
-					'text-color': '#241a0c',
+					'text-color': '#55431f',
 					'text-halo-color': '#efe6cc',
-					'text-halo-width': 1.3
+					'text-halo-width': 1.2
 				}
 			},
 			{
@@ -170,7 +184,7 @@ export function explorerStyle(): StyleSpecification {
 						}
 					],
 					'text-font': ['Noto Sans Bold'],
-					'text-size': 13,
+					'text-size': ts(13),
 					'text-offset': [0, 0.9],
 					'text-anchor': 'top',
 					'text-max-width': 14,
@@ -213,7 +227,7 @@ export function explorerStyle(): StyleSpecification {
 					visibility: 'none',
 					'text-field': ['coalesce', ['get', 'name:en'], ['get', 'name']],
 					'text-font': ['Noto Sans Regular'],
-					'text-size': ['match', ['get', 'class'], 'city', 13, 11]
+					'text-size': ['match', ['get', 'class'], 'city', ts(13), ts(11)]
 				},
 				paint: {
 					'text-color': '#ffffff',
@@ -229,7 +243,7 @@ export function explorerStyle(): StyleSpecification {
 					visibility: 'none',
 					'text-field': ['get', 'modern'],
 					'text-font': ['Noto Sans Bold'],
-					'text-size': 12.5,
+					'text-size': ts(12.5),
 					'text-offset': [0, 1.4],
 					'text-anchor': 'top',
 					'text-max-width': 14

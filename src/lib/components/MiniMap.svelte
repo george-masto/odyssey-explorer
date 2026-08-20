@@ -33,11 +33,18 @@
 			if (!map) return;
 			// Inset-specific label treatment: tiny frame, so compact single-line
 			// Greek, slightly smaller, black and bold for legibility.
-			for (const layer of ['a-toponym-land', 'a-toponym-sea']) {
+			for (const [layer, kind] of [
+				['a-toponym-land', 'land'],
+				['a-toponym-sea', 'sea']
+			] as const) {
 				map.setLayoutProperty(layer, 'text-field', ['get', 'grc']);
 				map.setLayoutProperty(layer, 'text-size', 9.5);
 				map.setLayoutProperty(layer, 'text-font', ['Noto Sans Bold']);
+				map.setLayoutProperty(layer, 'text-transform', 'none');
 				map.setLayoutProperty(layer, 'text-letter-spacing', 0.05);
+				// The inset sits below every toponym's zoom gate — keep only the
+				// land/sea split, drop the gate.
+				map.setFilter(layer, ['==', ['get', 'kind'], kind]);
 				map.setPaintProperty(layer, 'text-color', '#1c1408');
 				map.setPaintProperty(layer, 'text-halo-color', '#efe6cc');
 				map.setPaintProperty(layer, 'text-halo-width', 1.4);
