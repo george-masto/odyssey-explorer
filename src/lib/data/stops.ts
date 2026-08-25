@@ -55,6 +55,7 @@ export interface Stop {
 	title: string;
 	book_refs: string[];
 	coords: { lat: number; lng: number };
+	anchorage: { lat: number; lng: number }; // offshore roadstead the ship rests in — never on land, never on the marker
 	camera: { zoom: number }; // north-up always — no bearing, no pitch (user decision, 2026-08-17)
 	certainty: Certainty;
 	ancient: { grc: string; translit: string; el: string };

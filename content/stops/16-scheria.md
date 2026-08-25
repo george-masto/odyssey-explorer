@@ -5,6 +5,7 @@ phase: wanderings
 title: Scheria of the Phaeacians
 book_refs: ["Od. 6.1–8.586", "Od. 13.1–187"]
 coords: { lat: 39.674, lng: 19.710 }
+anchorage: { lat: 39.647, lng: 19.672 } # off Paleokastritsa's headlands
 camera: { zoom: 10.5 }
 certainty: traditional
 ancient: { grc: "Σχερίη (Φαίηκες)", translit: "Scheríē (Phaíēkes)", el: "Σχερία (Φαίακες)" }

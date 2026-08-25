@@ -5,6 +5,7 @@ phase: wanderings
 title: Aeolus and the Bag of Winds
 book_refs: ["Od. 10.1–79"]
 coords: { lat: 38.789, lng: 15.213 }
+anchorage: { lat: 38.795, lng: 15.138 } # off Stromboli's southwest shore
 camera: { zoom: 9.5 }
 certainty: traditional
 ancient: { grc: "Αἰολίη", translit: "Aiolíē", el: "Αιολία" }

@@ -5,6 +5,7 @@ phase: wanderings
 title: Ismarus of the Cicones
 book_refs: ["Od. 9.39–61"]
 coords: { lat: 40.876, lng: 25.513 }
+anchorage: { lat: 40.800, lng: 25.505 } # in the Thracian Sea off Maroneia
 camera: { zoom: 9 }
 certainty: traditional
 ancient: { grc: "Ἴσμαρος (Κίκονες)", translit: "Ísmaros (Kíkones)", el: "Ίσμαρος (Κίκονες)" }

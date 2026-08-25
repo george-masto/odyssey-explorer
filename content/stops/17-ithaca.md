@@ -5,6 +5,7 @@ phase: wanderings
 title: Ithaca
 book_refs: ["Od. 13.187 ff.", "Od. 17–23 (endgame bridge)"]
 coords: { lat: 38.366, lng: 20.719 }
+anchorage: { lat: 38.386, lng: 20.724 } # in the Gulf of Molos, outside Vathy's inlet
 camera: { zoom: 10.5 }
 certainty: traditional
 ancient: { grc: "Ἰθάκη", translit: "Ithákē", el: "Ιθάκη" }

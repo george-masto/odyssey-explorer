@@ -5,6 +5,7 @@ phase: wanderings
 title: Scylla & Charybdis
 book_refs: ["Od. 12.73–126", "Od. 12.201–259"]
 coords: { lat: 38.253, lng: 15.638 }
+anchorage: { lat: 38.222, lng: 15.606 } # mid-channel, south of the narrows
 camera: { zoom: 10.5 }
 certainty: traditional
 ancient: { grc: "Σκύλλα καὶ Χάρυβδις", translit: "Skýlla kaì Chárybdis", el: "Σκύλλα και Χάρυβδη" }

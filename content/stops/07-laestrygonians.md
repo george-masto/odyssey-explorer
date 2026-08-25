@@ -5,6 +5,7 @@ phase: wanderings
 title: The Laestrygonians
 book_refs: ["Od. 10.80–132"]
 coords: { lat: 41.387, lng: 9.159 }
+anchorage: { lat: 41.356, lng: 9.116 } # outside the fjord mouth — where Odysseus alone moored, and alone escaped
 camera: { zoom: 10.5 }
 certainty: disputed
 ancient: { grc: "Λαιστρυγόνες (Τηλέπυλος)", translit: "Laistrygónes (Tēlépylos)", el: "Λαιστρυγόνες" }

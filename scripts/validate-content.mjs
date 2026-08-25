@@ -59,6 +59,20 @@ for (const f of files) {
 	for (const field of ['id', 'seq', 'title', 'coords', 'camera', 'certainty', 'ancient', 'modern', 'crew', 'summary', 'book_refs'])
 		if (y[field] === undefined) errors.push(`${f}: missing base field '${field}'`);
 
+	// anchorage: the ship's offshore resting point. Hand-placed in open water so
+	// the trireme never sits on land or on the numbered marker; here we can only
+	// bound the offset (in-water is verified by eye on the real map).
+	if (typeof y.anchorage?.lat !== 'number' || typeof y.anchorage?.lng !== 'number') {
+		errors.push(`${f}: missing anchorage { lat, lng }`);
+	} else if (y.coords) {
+		const rad = Math.PI / 180;
+		const dx = (y.anchorage.lng - y.coords.lng) * rad * Math.cos(((y.anchorage.lat + y.coords.lat) / 2) * rad);
+		const dy = (y.anchorage.lat - y.coords.lat) * rad;
+		const km = 6371 * Math.hypot(dx, dy);
+		if (km < 0.5 || km > 25)
+			errors.push(`${f}: anchorage is ${km.toFixed(1)} km from the stop (want 0.5–25 km offshore)`);
+	}
+
 	// excerpt + Greek fidelity
 	if (!y.excerpt) {
 		errors.push(`${f}: no excerpt (deep content required)`);

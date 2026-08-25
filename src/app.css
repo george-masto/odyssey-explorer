@@ -665,6 +665,65 @@ body {
 	display: block;
 	width: 100%;
 	height: auto;
+	/* A slow swell, even at anchor. */
+	animation: ship-bob 5.6s ease-in-out infinite;
+	transform-origin: 50% 80%;
+}
+
+/* The trireme is painted bow-west; eastbound legs mirror it so the bow leads.
+   The flip lives inside the bob keyframes too — `animation` owns `transform`,
+   so a bare scaleX on the element would be overridden while bobbing. */
+.ship-marker.facing-east img {
+	transform: scaleX(-1);
+	animation-name: ship-bob-east;
+}
+
+@keyframes ship-bob {
+	0%,
+	100% {
+		transform: rotate(-1.2deg) translateY(0.5px);
+	}
+	50% {
+		transform: rotate(1.4deg) translateY(-1px);
+	}
+}
+
+@keyframes ship-bob-east {
+	0%,
+	100% {
+		transform: scaleX(-1) rotate(1.2deg) translateY(0.5px);
+	}
+	50% {
+		transform: scaleX(-1) rotate(-1.4deg) translateY(-1px);
+	}
+}
+
+/* Wake ripples shed while sailing — ink rings on the chart, foam on satellite. */
+.wake-ripple {
+	pointer-events: none;
+}
+
+.wake-ripple div {
+	width: 17px;
+	height: 17px;
+	border-radius: 50%;
+	border: 2px solid rgba(112, 90, 51, 0.5);
+	animation: wake-fade 1.35s ease-out forwards;
+}
+
+.wake-ripple.sat div {
+	border-color: rgba(255, 255, 255, 0.65);
+}
+
+@keyframes wake-fade {
+	from {
+		transform: scale(0.3);
+		opacity: 0.85;
+	}
+	to {
+		transform: scale(1.6);
+		opacity: 0;
+	}
 }
 
 /* minimap position dot — blue so it stands out against the parchment */
@@ -692,8 +751,13 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-	.mini-dot {
+	.mini-dot,
+	.ship-marker img {
 		animation: none;
+	}
+
+	.wake-ripple {
+		display: none;
 	}
 }
 

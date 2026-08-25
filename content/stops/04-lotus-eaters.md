@@ -5,6 +5,7 @@ phase: wanderings
 title: The Lotus-Eaters
 book_refs: ["Od. 9.82–104"]
 coords: { lat: 33.808, lng: 10.845 }
+anchorage: { lat: 33.945, lng: 10.800 } # off Djerba's north shore
 camera: { zoom: 9 }
 certainty: traditional
 ancient: { grc: "Λωτοφάγοι", translit: "Lōtophágoi", el: "Λωτοφάγοι" }

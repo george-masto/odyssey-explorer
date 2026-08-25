@@ -5,6 +5,7 @@ phase: wanderings
 title: The Wreck
 book_refs: ["Od. 12.403–450"]
 coords: { lat: 36.9, lng: 16.5 }
+anchorage: { lat: 36.925, lng: 16.300 } # adrift in the open Ionian
 camera: { zoom: 7.5 }
 certainty: mythic
 ancient: { grc: "Ναυάγιον", translit: "Nauágion", el: "Ναυάγιο" }

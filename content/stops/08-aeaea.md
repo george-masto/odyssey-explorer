@@ -5,6 +5,7 @@ phase: wanderings
 title: Circe of Aeaea
 book_refs: ["Od. 10.133–574"]
 coords: { lat: 41.235, lng: 13.051 }
+anchorage: { lat: 41.195, lng: 13.000 } # in the roads under Monte Circeo's seaward face
 camera: { zoom: 10 }
 certainty: traditional
 ancient: { grc: "Αἰαίη (Κίρκη)", translit: "Aiaíē (Kírkē)", el: "Αιαία (Κίρκη)" }

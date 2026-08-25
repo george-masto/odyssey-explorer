@@ -5,6 +5,7 @@ phase: wanderings
 title: Thrinacia — the Cattle of the Sun
 book_refs: ["Od. 12.260–402"]
 coords: { lat: 37.853, lng: 15.287 }
+anchorage: { lat: 37.855, lng: 15.341 } # off Capo Taormina
 camera: { zoom: 9.5 }
 certainty: traditional
 ancient: { grc: "Θρινακίη", translit: "Thrinakíē", el: "Θρινακία" }

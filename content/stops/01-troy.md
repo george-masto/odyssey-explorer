@@ -5,6 +5,7 @@ phase: wanderings
 title: Troy
 book_refs: ["Od. 9.37–40", "Od. 1.1–10"]
 coords: { lat: 39.957, lng: 26.239 }
+anchorage: { lat: 39.928, lng: 26.098 } # Beşik Bay — the Bronze Age roadstead of Troy
 camera: { zoom: 9 }
 certainty: secure
 ancient: { grc: "Τροίη", translit: "Troíē", el: "Τροία" }

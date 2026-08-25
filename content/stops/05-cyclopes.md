@@ -5,6 +5,7 @@ phase: wanderings
 title: The Cyclops
 book_refs: ["Od. 9.105–566"]
 coords: { lat: 37.561, lng: 15.161 }
+anchorage: { lat: 37.553, lng: 15.203 } # seaward of the Faraglioni — the rocks the blinded giant threw
 camera: { zoom: 10 }
 certainty: traditional
 ancient: { grc: "Κύκλωπες", translit: "Kýklōpes", el: "Κύκλωπες" }

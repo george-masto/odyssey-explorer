@@ -5,6 +5,7 @@ phase: wanderings
 title: The Sirens
 book_refs: ["Od. 12.151–200"]
 coords: { lat: 40.581, lng: 14.429 }
+anchorage: { lat: 40.568, lng: 14.416 } # just south of the Li Galli islets
 camera: { zoom: 11 }
 certainty: traditional
 ancient: { grc: "Σειρῆνες", translit: "Seirênes", el: "Σειρήνες" }

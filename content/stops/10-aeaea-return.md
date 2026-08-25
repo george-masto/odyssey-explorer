@@ -5,6 +5,7 @@ phase: wanderings
 title: Return to Aeaea
 book_refs: ["Od. 12.1–150"]
 coords: { lat: 41.235, lng: 13.051 }
+anchorage: { lat: 41.195, lng: 13.000 } # the same roads as before — Aeaea revisited
 camera: { zoom: 10 }
 certainty: traditional
 ancient: { grc: "Αἰαίη", translit: "Aiaíē", el: "Αιαία" }

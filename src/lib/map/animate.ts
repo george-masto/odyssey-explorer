@@ -7,7 +7,12 @@ const easeInOutCubic = (t: number) => (t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2
  * the route line, the minimap dot trailing it). Returns a cancel function —
  * call it before starting a new leg so mid-voyage course changes don't fight.
  */
-export function sailMarker(marker: Marker, to: [number, number], duration: number): () => void {
+export function sailMarker(
+	marker: Marker,
+	to: [number, number],
+	duration: number,
+	onFrame?: (pos: { lng: number; lat: number }, t: number) => void
+): () => void {
 	const from = marker.getLngLat();
 	if (duration <= 0 || (from.lng === to[0] && from.lat === to[1])) {
 		marker.setLngLat(to);
@@ -18,7 +23,10 @@ export function sailMarker(marker: Marker, to: [number, number], duration: numbe
 	const frame = (now: number) => {
 		const t = Math.min((now - start) / duration, 1);
 		const k = easeInOutCubic(t);
-		marker.setLngLat([from.lng + (to[0] - from.lng) * k, from.lat + (to[1] - from.lat) * k]);
+		const lng = from.lng + (to[0] - from.lng) * k;
+		const lat = from.lat + (to[1] - from.lat) * k;
+		marker.setLngLat([lng, lat]);
+		onFrame?.({ lng, lat }, t);
 		if (t < 1) raf = requestAnimationFrame(frame);
 	};
 	raf = requestAnimationFrame(frame);

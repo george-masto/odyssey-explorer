@@ -5,6 +5,7 @@ phase: wanderings
 title: The Underworld
 book_refs: ["Od. 11"]
 coords: { lat: 39.236, lng: 20.480 }
+anchorage: { lat: 39.205, lng: 20.280 } # standing well off the Acheron mouth
 camera: { zoom: 8 }
 certainty: mythic
 ancient: { grc: "Νέκυια", translit: "Nékyia", el: "Νέκυια" }

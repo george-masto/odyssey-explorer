@@ -22,7 +22,11 @@ npx vercel deploy --prod           # manual deploy (normally: push to main auto-
    Perseus TEI (`sources/perseus/`) via `scripts/perseus.mjs`. The validator
    re-extracts and fails on one character of drift.
 2. **Every stop is complete**: excerpt + full word-by-word `interlinear` (tokens must
-   rejoin the line exactly), ≥3 sourced tidbits, etymology, attributed art, `now_today`.
+   rejoin the line exactly), ≥3 sourced tidbits, etymology, attributed art, `now_today`,
+   and a hand-placed `anchorage` (offshore point where the trireme rests — never on
+   land, never covering the numbered marker or its label; validator bounds it
+   0.5–25 km from the stop, in-water/label-clearance is verified by eye at the
+   stop's camera zoom, remembering labels hang *below* markers and scale 1.3× on phones).
 3. **Rights**: PD/CC only for systematic content; never NC/ND for art (validator
    rejects). Modern copyrighted translations (Wilson/Fagles) may be *mentioned*, never
    systematically displayed. Credits live on `/about` + README.
@@ -62,7 +66,12 @@ parchment / `m-*` EOX Sentinel-2 satellite + modern labels; state in
 `src/lib/state/now.svelte.ts`, N key). Content: one Markdown+frontmatter file per
 stop in `content/stops/` (schema exemplar: `12-scylla-charybdis.md`), parsed at
 build by `src/lib/data/stops.ts`. Components: `VoyageMap` (map, painted-trireme
-marker `src/lib/assets/ship.png`, sail animation `src/lib/map/animate.ts`),
+marker `src/lib/assets/ship.png` resting at each stop's `anchorage` — it bobs at
+anchor, flips to sail bow-first on eastbound legs (art is painted bow-west), and
+sheds wake ripples mid-leg; sail animation `src/lib/map/animate.ts`; ambient
+engraved-wave shimmer `src/lib/map/waves.ts` — an animated `fill-pattern` layer
+`a-waves` added at runtime in VoyageMap only, ~10 fps interval, era-toggled with
+the `a-*` group, static under reduced-motion, absent from MiniMap),
 `MiniMap` (fixed-frame inset, blue dot), `StoryRail` (+ `Excerpt` tap-gloss,
 `EtymologyCard`), `Onboarding` (first-visit tour, localStorage
 `odyssey-onboarded-v1`).
