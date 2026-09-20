@@ -84,6 +84,13 @@ rules in the SEPARATE personal-site repo (`~/Documents/personal_dev/website`,
 george-masto/website) proxying to odyssey-explorer.vercel.app — `/odyssey` and
 `/odyssey/` both, before its catch-all.
 
+**Analytics**: Vercel Web Analytics beacon is a plain `<script defer
+src="/_vercel/insights/script.js">` in `src/app.html` (added 2026-09-19; nothing
+was recorded before that). Because the site is proxied, visits via
+georgemasto.com/odyssey land in the *personal-site* project's dashboard under
+path `/odyssey`; direct odyssey-explorer.vercel.app visits land in this project's
+dashboard. Web Analytics must be toggled on in both Vercel projects.
+
 ## Backlog (designed, not built — see full design doc*)
 
 Telemachy stops (Ithaca-departure, Pylos — real Nestor's palace, Sparta);
